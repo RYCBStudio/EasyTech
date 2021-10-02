@@ -1,14 +1,14 @@
 [
 {
   "modid": "etech",
-  "name": "EasyTech",
+  "name": "Easy Tech",
   "description": "",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "https://github.com",
-  "updateUrl": "",
-  "authorList": ["RYCBStuio"],
-  "credits": "The Forge and FML guys, for making this example",
+  "url": "https://github.com/RYCBStudio/EasyTech",
+  "updateUrl": "https://github.com/RYCBStudio/EasyTech/tags",
+  "authorList": ["RYCBStudio"],
+  "credits": "StackOverflow,https://fmltutor.ustc-zzzz.net,CSDN",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

@@ -12,12 +12,13 @@ public class ClientProxy extends CommonProxy
     public void preInit(FMLPreInitializationEvent event)
     {
         super.preInit(event);
+        new ItemRenderLoader();
     }
 
     @Override
-    public void init(FMLInitializationEvent event)
+    public void Init(FMLInitializationEvent event)
     {
-        super.init(event);
+        super.Init(event);
     }
 
     @Override

@@ -1,0 +1,10 @@
+//这是简单科技的翻译文件
+
+//物品
+//材料
+item.ingotRedstoneSteel.name=赤钢
+item.ingotSteel.name=钢锭
+//方块
+tile.blockSteel.name=钢块
+//创造模式物品栏
+itemGroup.etech_tab.name=简单科技

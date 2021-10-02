@@ -1,0 +1,10 @@
+//This is a translate File of Easytech
+
+//Items
+//Materials
+item.ingotRedstoneSteel.name=Red Steel
+item.ingotSteel.name=Steel
+//Blocks
+tile.blockSteel.name=Steel Block
+//Creative Tabs
+itemGroup.etech_tab.name=Easy Tech
