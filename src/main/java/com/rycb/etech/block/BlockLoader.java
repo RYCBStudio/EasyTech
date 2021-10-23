@@ -1,5 +1,7 @@
 package com.rycb.etech.block;
 
+import com.rycb.etech.block.normal.BlockSteel;
+import com.rycb.etech.block.ore.OreLead;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -16,21 +18,24 @@ import net.minecraftforge.fml.relauncher.SideOnly;
  * Use the IntelliJ IDEA
  */
 public class BlockLoader {
-    public static Block blockSteel = new blockSteel();
+    public static Block blockSteel = new BlockSteel();
+    public static Block oreLead = new OreLead();
 
     public BlockLoader(FMLPreInitializationEvent event){
         register(blockSteel, "steel_block");
+        register(oreLead,"lead_ore");
     }
 
     @SideOnly(Side.CLIENT)
     public static void registerRenders(){
-        regosterRender(blockSteel);
+        registerRender(blockSteel);
+        registerRender(oreLead);
     }
     private static void register(Block block, String name){
         block.setRegistryName(name);
     }
     @SideOnly(Side.CLIENT)
-    private static void regosterRender(Block block){
+    private static void registerRender(Block block){
         ModelResourceLocation model  = new ModelResourceLocation(block.getRegistryName(),"invertory");
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block),0,model);
     }

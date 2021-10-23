@@ -4,7 +4,16 @@
 //Materials
 item.ingotRedstoneSteel.name=Red Steel
 item.ingotSteel.name=Steel
+item.swordSteel.name=Steel Sword
+item.pickaxeSteel.name=Steel Pickaxe
+item.axeSteel.name=Steel Axe
+item.shovelSteel.name=Steel Shovel
+item.matterDark.name=Dark Matter
+item.ingotLead.name=Lead Ingot
+item.hoeSteel.name=Steel Hoe
+
 //Blocks
 tile.blockSteel.name=Steel Block
+tile.OreLead.name=Lead Ore
 //Creative Tabs
-itemGroup.etech_tab.name=Easy Tech
+itemGroup.etech_tab=Easy Tech
