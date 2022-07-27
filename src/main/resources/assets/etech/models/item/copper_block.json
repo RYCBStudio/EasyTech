@@ -1,5 +1,5 @@
 {
-  "parent": "etech:block/lead_ore",
+  "parent": "etech:block/copper_block",
   "display": {
     "thirdperson": {
       "rotation": [ 10, -45, 170 ],

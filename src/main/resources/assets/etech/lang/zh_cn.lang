@@ -3,9 +3,16 @@ item.ingotTin.name=锡锭
 item.ingotCopper.name=铜锭
 item.ingotLead.name=铅锭
 item.icon.name=Modder Cheat Gun
+item.axeSteel.name=钢斧
+item.shovelSteel.name=钢铲
+item.swordSteel.name=钢剑
+item.pickaxeSteel.name=钢镐
+item.hoeSteel.name=钢锄
 
 tile.oreCopper.name=铜矿石
 tile.oreTin.name=锡矿石
 tile.oreLead.name=铅矿石
+
+tile.ingotCopperBlock.name=铜块
 
 itemGroup.etech_tab=简单科技

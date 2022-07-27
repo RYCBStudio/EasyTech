@@ -3,7 +3,7 @@ package com.rycb.etech.init;
 import com.rycb.etech.EasyTech;
 import com.rycb.etech.items.base.ItemBasicBase;
 import com.rycb.etech.items.base.ItemIngotBase;
-import com.rycb.etech.items.base.ToolBase;
+import com.rycb.etech.items.base.tools.*;
 import net.minecraft.item.*;
 
 import net.minecraftforge.common.util.EnumHelper;
@@ -35,10 +35,10 @@ public class ModItems {
     /**
      * Tools
      */
-    public static final ItemSword STEEL_SWORD = new ToolBase.Sword(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
-    public static final ItemHoe STEEL_HOE = new ToolBase.Hoe(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
-    public static final ItemPickaxe STEEL_PICKAXE = new ToolBase.Pickaxe(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
-    public static final ItemAxe STEEL_AXE = new ToolBase.Axe(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
-    public static final ItemSpade STEEL_SHOVEL = new ToolBase.Shovel(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
+//    public static final ItemSword STEEL_SWORD = new ToolSword(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
+//    public static final ItemHoe STEEL_HOE = new ToolHoe(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
+//    public static final ItemPickaxe STEEL_PICKAXE = new ToolPickaxe(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
+//    public static final ItemAxe STEEL_AXE = new ToolAxe(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
+//    public static final ItemSpade STEEL_SHOVEL = new ToolShovel(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
 
 }
