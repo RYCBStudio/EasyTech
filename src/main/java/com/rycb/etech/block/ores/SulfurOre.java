@@ -1,5 +1,6 @@
 package com.rycb.etech.block.ores;
 
+import com.rycb.etech.block.base.BlockBase;
 import com.rycb.etech.block.base.BlockOreBase;
 import com.rycb.etech.init.ModItems;
 import net.minecraft.block.SoundType;
@@ -14,7 +15,7 @@ import java.util.Random;
  * @author RYCBStudio/Java Department
  * <h1><center>Sulfur Ore</center></h1>
  */
-public class SulfurOre extends BlockOreBase {
+public class SulfurOre extends BlockBase {
     public SulfurOre(String UnlocalizedName, String RegistryName, Material material, CreativeTabs tab) {
         super(UnlocalizedName, RegistryName, material, tab);
         setSoundType(SoundType.STONE);

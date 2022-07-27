@@ -19,6 +19,7 @@ item.bootsSteel.name=Steel Boots
 tile.oreCopper.name=Copper Ore
 tile.oreTin.name=Tin Ore
 tile.oreLead.name=Lead Ore
+tile.oreSulfur.name=Sulfur Ore
 
 tile.ingotCopperBlock.name=Copper Block
 
