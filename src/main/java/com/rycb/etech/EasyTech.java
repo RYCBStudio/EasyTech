@@ -1,16 +1,16 @@
 package com.rycb.etech;
 
-import com.rycb.etech.common.CommonProxy;
+import com.rycb.etech.init.ModRecipes;
+import com.rycb.etech.proxy.CommonProxy;
+import com.rycb.etech.tabs.ETechTab;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-/**
- * @Author RYCBStudio
- */
 
-/**
+/*
  *                     GNU GENERAL PUBLIC LICENSE
  *                        Version 3, 29 June 2007
  *
@@ -688,13 +688,17 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  */
 
 
+/**
+ * @author RYCBStudio
+ */
+
 
 @Mod(modid = EasyTech.MODID, name = EasyTech.NAME, version = EasyTech.VERSION, acceptedMinecraftVersions = "[1.12,1.12.2]")
 public class EasyTech
 {
     public static final String MODID = "etech";
     public static final String NAME = "EasyTech";
-    public static final String MCVERSION = "1.18.1";
+    public static final String MCVERSION = "1.12.2";
     public static final String VERSION = "1.0";
 
     @Mod.Instance(EasyTech.MODID)
@@ -709,6 +713,7 @@ public class EasyTech
     @Mod.EventHandler
     public void Init(FMLInitializationEvent event)
     {
+        ModRecipes.init();
         proxy.Init(event);
     }
 
@@ -718,6 +723,8 @@ public class EasyTech
         proxy.postInit(event);
     }
 
-    @SidedProxy(clientSide = "com.rycb.etech.client.ClientProxy", serverSide = "com.rycb.etech.common.CommonProxy")
+    @SidedProxy(clientSide = "com.rycb.etech.proxy.ClientProxy", serverSide = "com.rycb.etech.proxy.CommonProxy")
     public static CommonProxy proxy;
+
+    public static CreativeTabs ETECH_TAB = new ETechTab();
 }

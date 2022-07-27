@@ -2,13 +2,13 @@
 {
   "modid": "etech",
   "name": "Easy Tech",
-  "description": "",
+  "description": "A simple, convenient, useful and surrealistic industrial mod",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "https://github.com/RYCBStudio/EasyTech",
-  "updateUrl": "https://github.com/RYCBStudio/EasyTech/tags",
+  "url": "",
+  "updateUrl": "",
   "authorList": ["RYCBStudio"],
-  "credits": "StackOverflow,https://fmltutor.ustc-zzzz.net,CSDN",
+  "credits": "The Forge and FML guys, for making this example",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

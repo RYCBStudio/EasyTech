@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    " S ",
+    " S ",
+    " W "
+  ],
+
+  "key":
+  {
+    "S":
+    {
+      "item": "etech:steel_ingot"
+    },
+    "W":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "etech:steel_sword",
+    "count": 1
+  }
+}

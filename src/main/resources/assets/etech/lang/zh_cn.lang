@@ -1,18 +1,11 @@
-//这是简单科技的翻译文件
-
-//物品
-//材料
-item.ingotRedstoneSteel.name=赤钢
 item.ingotSteel.name=钢锭
-item.swordSteel.name=钢剑
-item.pickaxeSteel.name=钢镐
-item.axeSteel.name=钢斧
-item.shovelSteel.name=钢铲
-item.matterDark.name=暗物质
+item.ingotTin.name=锡锭
+item.ingotCopper.name=铜锭
 item.ingotLead.name=铅锭
-item.hoeSteel.name=钢锄
-//方块
-tile.blockSteel.name=钢块
-tile.OreLead.name=铅矿
-//创造模式物品栏
+item.icon.name=Modder Cheat Gun
+
+tile.oreCopper.name=铜矿石
+tile.oreTin.name=锡矿石
+tile.oreLead.name=铅矿石
+
 itemGroup.etech_tab=简单科技
