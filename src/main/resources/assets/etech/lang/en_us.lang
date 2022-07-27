@@ -9,10 +9,17 @@ item.swordSteel.name=Steel Sword
 item.pickaxeSteel.name=Steel Pickaxe
 item.hoeSteel.name=Steel Hoe
 
+item.helmetSteel.name=Steel Helmet
+item.cplateSteel.name=Steel Chestplate
+item.leggingsSteel.name=Steel Leggings
+item.bootsSteel.name=Steel Boots
+
 tile.oreCopper.name=Copper Ore
 tile.oreTin.name=Tin Ore
 tile.oreLead.name=Lead Ore
 
 tile.ingotCopperBlock.name=Copper Block
+
+
 
 itemGroup.etech_tab=Easy Tech
