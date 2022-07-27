@@ -31,6 +31,8 @@ public class ModItems {
 
     public static final Item ICON_ITEM = new ItemBasicBase("icon", "icon_item", EasyTech.ETECH_TAB);
 
+    public static final Item SULFUR = new ItemBasicBase("sulfur", "sulfur", EasyTech.ETECH_TAB);
+
     /**
      * Materials
      */

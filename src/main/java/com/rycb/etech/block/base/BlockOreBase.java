@@ -19,6 +19,7 @@ public class BlockOreBase extends Block implements IHasModel {
         setCreativeTab(tab);
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+
     }
 
     @Override

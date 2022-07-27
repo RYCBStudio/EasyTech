@@ -23,9 +23,11 @@ public class ModBlocks {
 
     public static final Block LEAD_ORE = new BlockOreBase("Lead", "lead", Material.IRON, EasyTech.ETECH_TAB);
 
+    //public static final Block SULFUR_ORE = new
+
 
     /**
      * Ingot Blocks
      */
-    public static final Block COPPER_BLOCK = new BlockIngotBlockBase("Copper", "copper", Material.IRON, EasyTech.ETECH_TAB);
+//    public static final Block COPPER_BLOCK = new BlockIngotBlockBase("Copper", "copper", Material.IRON, EasyTech.ETECH_TAB);
 }
