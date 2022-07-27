@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "S S",
+    "SSS",
+    "SSS"
+  ],
+
+  "key":
+  {
+    "S":
+    {
+      "item": "etech:steel_ingot"
+    }
+  },
+
+  "result": {
+    "item": "etech:steel_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "S S",
+    "S S"
+  ],
+  "key": {
+    "S": {
+      "item": "etech:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "etech:steel_boots",
+    "count": 1
+  }
+}
