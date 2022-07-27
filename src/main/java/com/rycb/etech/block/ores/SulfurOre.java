@@ -25,12 +25,13 @@ public class SulfurOre extends BlockOreBase {
 
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        return ModItems.COPPER_INGOT;
+        return ModItems.SULFUR;
     }
 
     @Override
-    public int quantityDropped(Random rand){
+    public int quantityDropped(Random rand) {
         int min = 1;
-        int max = 2;
+        int max = 3;
+        return rand.nextInt(max) + min;
     }
 }

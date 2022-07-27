@@ -2,7 +2,10 @@ item.ingotSteel.name=钢锭
 item.ingotTin.name=锡锭
 item.ingotCopper.name=铜锭
 item.ingotLead.name=铅锭
+item.sulfur.name=硫粉
+
 item.icon.name=Modder Cheat Gun
+
 item.axeSteel.name=钢斧
 item.shovelSteel.name=钢铲
 item.swordSteel.name=钢剑
