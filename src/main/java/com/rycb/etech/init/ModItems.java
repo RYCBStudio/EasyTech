@@ -36,7 +36,7 @@ public class ModItems {
      */
     public static final Item.ToolMaterial MATERIAL_STEEL = EnumHelper.addToolMaterial("material_steel", 2, 1200, 8.5f, 2.5f, 20);
 
-    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_STEEL = EnumHelper.addArmorMaterial("armor_material_steel", EasyTech.MODID + ":steel_ingot", 17, new int[]{5, 10, 7, 3}, 22, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.25f);
+    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_STEEL = EnumHelper.addArmorMaterial("armor_material_steel", EasyTech.MODID + ":steel", 17, new int[]{5, 10, 7, 3}, 22, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.25f);
     /**
      * Tools
      */

@@ -1,7 +1,7 @@
 {
   "variants": {
-    "normal": {
-      "model": "etech:copper_block"
+    "": {
+      "model": "etech:opper_block"
     }
   }
 }

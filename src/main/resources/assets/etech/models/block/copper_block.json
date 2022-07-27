@@ -2,6 +2,6 @@
 	"parent": "block/cube_all",
 	"textures": {
 		"all": "etech:blocks/copper_block",
-		"particle": "etech:blocks/steel_ore_block"
+		"particle": "etech:blocks/copper_block"
 	}
 }
