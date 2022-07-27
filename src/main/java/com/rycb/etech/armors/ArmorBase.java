@@ -1,5 +1,6 @@
 package com.rycb.etech.armors;
 
+import com.rycb.etech.EasyTech;
 import com.rycb.etech.init.ModItems;
 import com.rycb.etech.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
@@ -19,6 +20,6 @@ public class ArmorBase extends ItemArmor implements IHasModel {
 
     @Override
     public void registerModels() {
-
+        EasyTech.proxy.registerItemRender(this, 0, "inventory");
     }
 }
