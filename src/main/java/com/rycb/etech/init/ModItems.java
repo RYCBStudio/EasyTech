@@ -2,6 +2,7 @@ package com.rycb.etech.init;
 
 import com.rycb.etech.EasyTech;
 import com.rycb.etech.armors.ArmorBase;
+import com.rycb.etech.food.FoodBase;
 import com.rycb.etech.items.base.ItemBasicBase;
 import com.rycb.etech.items.base.ItemIngotBase;
 import com.rycb.etech.items.base.tools.*;
@@ -56,4 +57,6 @@ public class ModItems {
     public static Item STEEL_LEGGINGS = new ArmorBase(ARMOR_MATERIAL_STEEL, 2, EntityEquipmentSlot.LEGS, "leggingsSteel", "steel_leggings", EasyTech.ETECH_TAB);
     public static Item STEEL_BOOTS = new ArmorBase(ARMOR_MATERIAL_STEEL, 1, EntityEquipmentSlot.FEET, "bootsSteel", "steel_boots", EasyTech.ETECH_TAB);
 
+
+    public static Item SULFUR_CHOCOLATE = new FoodBase("SulfurChocolate", "sulfur_chocolate", 4, 1.4f, false, EasyTech.ETECH_TAB);
 }

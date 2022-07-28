@@ -3,12 +3,14 @@ package com.rycb.etech;
 import com.rycb.etech.init.ModRecipes;
 import com.rycb.etech.proxy.CommonProxy;
 import com.rycb.etech.tabs.ETechTab;
+import com.rycb.etech.world.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 
 /*
  *                     GNU GENERAL PUBLIC LICENSE
@@ -708,6 +710,7 @@ public class EasyTech
     public void preInit(FMLPreInitializationEvent event)
     {
         proxy.preInit(event);
+        GameRegistry.registerWorldGenerator(new ModWorldGen(), 2);
     }
 
     @Mod.EventHandler
