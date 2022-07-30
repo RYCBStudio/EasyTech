@@ -4,6 +4,7 @@ item.ingotCopper.name=Copper Ingot
 item.ingotLead.name=Lead Ingot
 item.sulfur.name=Sulfur
 item.icon.name=Modder Cheat Gun
+item.ChocolateProembryo.name=Chocolate Proembryo
 
 item.axeSteel.name=Steel Axe
 item.shovelSteel.name=Steel Shovel
@@ -21,8 +22,10 @@ tile.oreTin.name=Tin Ore
 tile.oreLead.name=Lead Ore
 tile.oreSulfur.name=Sulfur Ore
 
-tile.ingotCopperBlock.name=Copper Block
 
-food.foodSulfurChocolate.name=Sulfur Chocolate
+
+item.foodSulfurChocolate.name=Sulfur Chocolate
+item.foodchocolate.name=Chocolate
+item.foodfolkPsn1.name=Folk Prescription No.1
 
 itemGroup.etech_tab=Easy Tech

@@ -10,7 +10,7 @@ import net.minecraft.item.ItemAxe;
  */
 public class ToolAxe extends ItemAxe implements IHasModel {
     public ToolAxe(ToolMaterial material, String UnlocalizedName, String RegistryName, CreativeTabs tab) {
-        super(material);
+        super(material, 9.0f, -2.5f);
         setUnlocalizedName("axe" + UnlocalizedName);
         setRegistryName(RegistryName + "_axe");
         setCreativeTab(tab);

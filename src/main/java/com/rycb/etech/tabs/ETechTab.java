@@ -18,7 +18,7 @@ public class ETechTab extends CreativeTabs {
     @Override
     public ItemStack getTabIconItem()
     {
-        return new ItemStack(ModItems.ICON_ITEM);
+        return new ItemStack(ModItems.MCG);
     }
 
 }
