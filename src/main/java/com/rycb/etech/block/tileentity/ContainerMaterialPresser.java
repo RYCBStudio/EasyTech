@@ -4,7 +4,6 @@
 //import net.minecraft.entity.player.InventoryPlayer;
 //import net.minecraft.inventory.Container;
 //import net.minecraft.inventory.IContainerListener;
-//import net.minecraft.inventory.InventoryBasic;
 //import net.minecraft.inventory.Slot;
 //import net.minecraft.item.ItemStack;
 //import net.minecraftforge.fml.relauncher.Side;
@@ -22,48 +21,48 @@
 // */
 //public class ContainerMaterialPresser extends Container {
 //
-//    private final TileEntityMaterialPresser TILEEENTITY;
-//
-//    private int makeTime;
 //    protected static final float SOUND_VOLUME = 0.5f;
+//    private final TileEntityMaterialPresser TILEEENTITY;
+//    private int makeTime;
+//    private int burnTime;
+//    private int currentBurnTime;
+//    private int totalCookTime;
 //
 //    public ContainerMaterialPresser(InventoryPlayer player, TileEntityMaterialPresser tileEntity) {
 //        this.TILEEENTITY = tileEntity;
 //        IItemHandler handler = TILEEENTITY.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null);
-//        this.addSlotToContainer(new SlotItemHandler(handler, 0, 26, 11));
-//        this.addSlotToContainer(new SlotItemHandler(handler, 1, 26, 59));
-//        this.addSlotToContainer(new SlotItemHandler(handler, 2, 7, 35));
-//        this.addSlotToContainer(new SlotItemHandler(handler, 3, 81, 36));
+//        this.addSlotToContainer(new SlotItemHandler(handler, 0, 97, 17));
+//        this.addSlotToContainer(new SlotItemHandler(handler, 1, 120, 17));
+//        this.addSlotToContainer(new SlotItemHandler(handler, 1, 143, 17));
+//        this.addSlotToContainer(new SlotItemHandler(handler, 2, 109, 61));
+//        this.addSlotToContainer(new SlotItemHandler(handler, 3, 131, 61));
 //
-//        for(int y = 0; y < 3; y++)
-//        {
-//            for(int x = 0; x < 9; x++)
-//            {
-//                this.addSlotToContainer(new Slot(player, x + y*9 + 9, 8 + x*18, 84 + y*18));
+//
+//        for (int y = 0; y < 3; y++) {
+//            for (int x = 0; x < 9; x++) {
+//                this.addSlotToContainer(new Slot(player, x + y * 9 + 9, 8 + x * 18, 84 + y * 18));
 //            }
 //        }
 //
-//        for(int x = 0; x < 9; x++)
-//        {
+//        for (int x = 0; x < 9; x++) {
 //            this.addSlotToContainer(new Slot(player, x, 8 + x * 18, 142));
 //        }
 //    }
 //
 //    @Override
-//    public void detectAndSendChanges()
-//    {
+//    public void detectAndSendChanges() {
 //        super.detectAndSendChanges();
 //
-//        for(int i = 0; i < this.listeners.size(); ++i)
-//        {
-//            IContainerListener listener = (IContainerListener)this.listeners.get(i);
-//            if(this.cookTime != this.TILEEENTITY.getField(2)) listener.sendWindowProperty(this, 2, this.TILEEENTITY.getField(2));
-//            if(this.burnTime != this.TILEEENTITY.getField(0)) listener.sendWindowProperty(this, 0, this.TILEEENTITY.getField(0));
-//            if(this.currentBurnTime != this.TILEEENTITY.getField(1)) listener.sendWindowProperty(this, 1, this.TILEEENTITY.getField(1));
-//            if(this.totalCookTime != this.TILEEENTITY.getField(3)) listener.sendWindowProperty(this, 3, this.TILEEENTITY.getField(3));
+//        for (IContainerListener iContainerListener : this.listeners) {
+//            if (this.makeTime != this.TILEEENTITY.getField(2))
+//                ((IContainerListener) iContainerListener).sendWindowProperty(this, 2, this.TILEEENTITY.getField(2));
+//            if (this.currentBurnTime != this.TILEEENTITY.getField(1))
+//                ((IContainerListener) iContainerListener).sendWindowProperty(this, 1, this.TILEEENTITY.getField(1));
+//            if (this.totalCookTime != this.TILEEENTITY.getField(3))
+//                ((IContainerListener) iContainerListener).sendWindowProperty(this, 3, this.TILEEENTITY.getField(3));
 //        }
 //
-//        this.cookTime = this.TILEEENTITY.getField(2);
+//        this.makeTime = this.TILEEENTITY.getField(2);
 //        this.burnTime = this.TILEEENTITY.getField(0);
 //        this.currentBurnTime = this.TILEEENTITY.getField(1);
 //        this.totalCookTime = this.TILEEENTITY.getField(3);
@@ -71,79 +70,55 @@
 //
 //    @Override
 //    @SideOnly(Side.CLIENT)
-//    public void updateProgressBar(int id, int data)
-//    {
+//    public void updateProgressBar(int id, int data) {
 //        this.TILEEENTITY.setField(id, data);
 //    }
 //
 //    @Override
-//    public boolean canInteractWith(EntityPlayer playerIn)
-//    {
+//    public boolean canInteractWith(EntityPlayer playerIn) {
 //        return this.TILEEENTITY.isUsableByPlayer(playerIn);
 //    }
 //
 //    @Override
-//    public ItemStack transferStackInSlot(EntityPlayer playerIn, int index)
-//    {
+//    public ItemStack transferStackInSlot(EntityPlayer playerIn, int index) {
 //        ItemStack stack = ItemStack.EMPTY;
-//        Slot slot = (Slot)this.inventorySlots.get(index);
+//        Slot slot = (Slot) this.inventorySlots.get(index);
 //
-//        if(slot != null && slot.getHasStack())
-//        {
+//        if (slot != null && slot.getHasStack()) {
 //            ItemStack stack1 = slot.getStack();
 //            stack = stack1.copy();
 //
-//            if(index == 3)
-//            {
-//                if(!this.mergeItemStack(stack1, 4, 40, true)) return ItemStack.EMPTY;
+//            if (index == 3) {
+//                if (!this.mergeItemStack(stack1, 4, 40, true)) return ItemStack.EMPTY;
 //                slot.onSlotChange(stack1, stack);
-//            }
-//            else if(index != 2 && index != 1 && index != 0)
-//            {
-//                Slot slot1 = (Slot)this.inventorySlots.get(index + 1);
+//            } else if (index != 2 && index != 1 && index != 0) {
+//                Slot slot1 = (Slot) this.inventorySlots.get(index + 1);
 //
-//                if(!MaterialPresserRecipes.getInstance().getSinteringResult(stack1, slot1.getStack()).isEmpty())
-//                {
-//                    if(!this.mergeItemStack(stack1, 0, 2, false))
-//                    {
+//                if (!MaterialPresserRecipes.getInstance().getSinteringResult(stack1, slot1.getStack()).isEmpty()) {
+//                    if (!this.mergeItemStack(stack1, 0, 2, false)) {
 //                        return ItemStack.EMPTY;
-//                    }
-//                    else if(TileEntityMaterialPresser.isItemFuel(stack1))
-//                    {
-//                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
-//                    }
-//                    else if(TileEntityMaterialPresser.isItemFuel(stack1))
-//                    {
-//                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
-//                    }
-//                    else if(TileEntityMaterialPresser.isItemFuel(stack1))
-//                    {
-//                        if(!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
-//                    }
-//                    else if(index >= 4 && index < 31)
-//                    {
-//                        if(!this.mergeItemStack(stack1, 31, 40, false)) return ItemStack.EMPTY;
-//                    }
-//                    else if(index >= 31 && index < 40 && !this.mergeItemStack(stack1, 4, 31, false))
-//                    {
+//                    } else if (TileEntityMaterialPresser.isItemFuel(stack1)) {
+//                        if (!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
+//                    } else if (TileEntityMaterialPresser.isItemFuel(stack1)) {
+//                        if (!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
+//                    } else if (TileEntityMaterialPresser.isItemFuel(stack1)) {
+//                        if (!this.mergeItemStack(stack1, 2, 3, false)) return ItemStack.EMPTY;
+//                    } else if (index >= 4 && index < 31) {
+//                        if (!this.mergeItemStack(stack1, 31, 40, false)) return ItemStack.EMPTY;
+//                    } else if (index >= 31 && index < 40 && !this.mergeItemStack(stack1, 4, 31, false)) {
 //                        return ItemStack.EMPTY;
 //                    }
 //                }
-//            }
-//            else if(!this.mergeItemStack(stack1, 4, 40, false))
-//            {
+//            } else if (!this.mergeItemStack(stack1, 4, 40, false)) {
 //                return ItemStack.EMPTY;
 //            }
-//            if(stack1.isEmpty())
-//            {
+//            if (stack1.isEmpty()) {
 //                slot.putStack(ItemStack.EMPTY);
-//            }
-//            else
-//            {
+//            } else {
 //                slot.onSlotChanged();
 //
 //            }
-//            if(stack1.getCount() == stack.getCount()) return ItemStack.EMPTY;
+//            if (stack1.getCount() == stack.getCount()) return ItemStack.EMPTY;
 //            slot.onTake(playerIn, stack1);
 //        }
 //        return stack;
