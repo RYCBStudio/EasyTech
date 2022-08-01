@@ -5,7 +5,7 @@ import com.rycb.etech.armors.ArmorBase;
 import com.rycb.etech.food.EffectFoodBase;
 import com.rycb.etech.items.base.ItemBasicBase;
 import com.rycb.etech.items.base.ItemIngotBase;
-import com.rycb.etech.items.base.singleitem.ItemFolkPrescription1;
+import com.rycb.etech.items.base.ItemFolkPrescription;
 import com.rycb.etech.items.base.tools.*;
 import com.rycb.etech.util.Reference;
 import net.minecraft.init.MobEffects;
@@ -73,7 +73,7 @@ public class ModItems {
     public static final Item SULFUR_CHOCOLATE = new EffectFoodBase("SulfurChocolate", "sulfur_chocolate", 4, 1.4f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.POISON, 60 * 20, 2), new PotionEffect(MobEffects.WITHER, 60 * 20, 2), new PotionEffect(MobEffects.NAUSEA, 120 * 20, 3));
     public static final Item CHOCOLATE = new EffectFoodBase("chocolate", "chocolate", 10, 2.0f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.HASTE, 120 * 60, 3), new PotionEffect(MobEffects.GLOWING, 120 * 60, 2), new PotionEffect(MobEffects.REGENERATION, 120 * 60, 3));
 
-    public static final Item FOLK_PRESCRIPTION_1 = new ItemFolkPrescription1("folkPsn1", "folk_psn_1", 5, 10.0f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.REGENERATION, 80 * 20, 1), new PotionEffect(MobEffects.HUNGER, 50 * 20, 2), new PotionEffect(MobEffects.SLOWNESS, 40 * 20, 1));
+    public static final Item FOLK_PRESCRIPTION_1 = new ItemFolkPrescription(1, 5, 10.0f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.REGENERATION, 80 * 20, 1), new PotionEffect(MobEffects.HUNGER, 50 * 20, 2), new PotionEffect(MobEffects.SLOWNESS, 40 * 20, 1));
 
     /**
      * Partially Prepared Products

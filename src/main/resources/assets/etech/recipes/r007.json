@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSS",
+    "SCS",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "etech:sulfur"
+    },
+    "C": {
+      "item": "etech:chocolate"
+    }
+  },
+  "result": {
+    "item": "etech:object",
+    "count": 1
+  }
+}

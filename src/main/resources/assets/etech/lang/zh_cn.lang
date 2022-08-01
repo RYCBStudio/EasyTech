@@ -4,6 +4,8 @@ item.ingotCopper.name=铜锭
 item.ingotLead.name=铅锭
 item.sulfur.name=硫粉
 item.ChocolateProembryo.name=巧克力原胚
+item.rawPlastic.name=塑料原料
+item.plastic.name=塑料
 
 item.icon.name=Modder Cheat Gun
 

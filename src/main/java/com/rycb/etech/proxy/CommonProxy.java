@@ -1,7 +1,6 @@
 package com.rycb.etech.proxy;
 
 
-import com.rycb.etech.util.handlers.RegistryHandler;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -14,21 +13,19 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  * Use the IntelliJ IDEA
  */
 public class CommonProxy {
-    public void preInit(FMLPreInitializationEvent event)
-    {
-        /*new RegistryHandler();*/
+    public void preInit(FMLPreInitializationEvent event) {
+        //TODO
     }
 
-    public void Init(FMLInitializationEvent event)
-    {
-
+    public void Init(FMLInitializationEvent event) {
+        //TODO
     }
 
-    public void postInit(FMLPostInitializationEvent event)
-    {
-
+    public void postInit(FMLPostInitializationEvent event) {
+        //TODO
     }
 
     public void registerItemRender(Item item, int meta, String id) {
+        //TODO
     }
 }

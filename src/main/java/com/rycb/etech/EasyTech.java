@@ -694,7 +694,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
  */
 
 
-@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = "[1.12.2]")
+@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSION)
 public class EasyTech {
 
     @Mod.Instance(Reference.MOD_ID)
@@ -717,7 +717,7 @@ public class EasyTech {
         proxy.postInit(event);
     }
 
-    @SidedProxy(clientSide = "com.rycb.etech.proxy.ClientProxy", serverSide = "com.rycb.etech.proxy.CommonProxy")
+    @SidedProxy(clientSide = Reference.PROXY_CLIENT, serverSide = Reference.PROXY_SERVER)
     public static CommonProxy proxy;
 
     public static CreativeTabs ETECH_TAB = new ETechTab();
