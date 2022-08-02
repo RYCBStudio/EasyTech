@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "II ",
+    "IS ",
+    " S "
+  ],
+  "key": {
+    "I": {
+      "item": "etech:steel_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "etech:steel_axe",
+    "count": 1
+  }
+}

@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "etech/items/steel_hoe"
+    "layer0": "etech:items/steel_hoe"
   }
 }

@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.0.1-Programming_Debug ' + new Date().format('[yyyy-MM-dd]').toString() + new Date().format("HH mm ss]")
+version = '0.0.1-Programming_Debug'
 group = 'com.rycb.etch'
 archivesBaseName = 'EasyTech_Build'
 
