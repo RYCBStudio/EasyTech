@@ -6,8 +6,8 @@
     "GGG"
   ],
   "key": {
-    "R": {
-      "item": "blockGold"
+    "G": {
+      "item": "minecraft:gold_block"
     },
     "A": {
       "item": "minecraft:golden_apple"

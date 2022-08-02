@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SSN",
+    "GWP",
+    "AOH"
+  ],
+  "key": {
+    "S": {
+      "item": "etech:steel_ingot"
+    },
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "G": {
+      "item": "minecraft:golden_apple",
+      "data": 1
+    },
+    "W": {
+      "item": "etech:steel_sword"
+    },
+    "P": {
+      "item": "etech:steel_pickaxe"
+    },
+    "A": {
+      "item": "etech:steel_axe"
+    },
+    "O": {
+      "item": "etech:steel_shovel"
+    },
+    "H": {
+      "item": "etech:steel_hoe"
+    }
+  },
+  "result": {
+    "item": "etech:icon_item",
+    "count": 1
+  }
+}

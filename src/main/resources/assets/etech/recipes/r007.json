@@ -10,11 +10,11 @@
       "item": "etech:sulfur"
     },
     "C": {
-      "item": "etech:chocolate"
+      "item": "etech:food_chocolate"
     }
   },
   "result": {
-    "item": "etech:sulfur_chocolate",
+    "item": "etech:food_sulfur_chocolate",
     "count": 1
   }
 }

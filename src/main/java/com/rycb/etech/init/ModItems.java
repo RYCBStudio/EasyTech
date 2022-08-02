@@ -4,9 +4,10 @@ import com.rycb.etech.EasyTech;
 import com.rycb.etech.armors.ArmorBase;
 import com.rycb.etech.food.EffectFoodBase;
 import com.rycb.etech.items.base.ItemBasicBase;
-import com.rycb.etech.items.base.ItemIngotBase;
 import com.rycb.etech.items.base.ItemFolkPrescription;
+import com.rycb.etech.items.base.ItemIngotBase;
 import com.rycb.etech.items.base.tools.*;
+import com.rycb.etech.items.single.MCG;
 import com.rycb.etech.util.Reference;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
@@ -34,9 +35,6 @@ public class ModItems {
 
     public static final Item LEAD_INGOT = new ItemIngotBase("Lead", "lead", EasyTech.ETECH_TAB);
 
-    //In the game its name is "Modder Cheat Gun"
-    public static final Item MCG = new ItemBasicBase("icon", "icon_item", EasyTech.ETECH_TAB);
-
     public static final Item SULFUR = new ItemBasicBase("sulfur", "sulfur", EasyTech.ETECH_TAB);
 
     public static final Item PLASTIC = new ItemBasicBase("plastic", "plastic", EasyTech.ETECH_TAB);
@@ -59,6 +57,8 @@ public class ModItems {
     public static final ItemAxe STEEL_AXE = new ToolAxe(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
     public static final ItemSpade STEEL_SHOVEL = new ToolShovel(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
 
+    //In the game its name is "Modder Cheat Gun"
+    public static final Item MCG = new MCG();
 
     /**
      * Armors
