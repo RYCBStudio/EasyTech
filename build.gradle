@@ -12,7 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.0.1-Programming_Debug'
+version = '0.0.1-Programming_Debug ' + new Date().format('[yyyy-MM-dd]').toString() + new Date().format("HH mm ss]")
 group = 'com.rycb.etch'
 archivesBaseName = 'EasyTech_Build'
 
@@ -42,12 +42,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "examplemod",
-                "Specification-Vendor"    : "examplemodsareus",
+                "Specification-Title"     : "EasyTech",
+                "Specification-Vendor"    : "EasyTechSareus",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : "${version}",
-                "Implementation-Vendor"   : "examplemodsareus",
+                "Implementation-Vendor"   : "EasyTechSareus",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

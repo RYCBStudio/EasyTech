@@ -29,6 +29,12 @@ tile.oreSulfur.name=硫矿石
 
 item.foodSulfurChocolate.name=硫巧克力
 item.foodchocolate.name=巧克力
+
 item.foodfolkPsn1.name=偏方
+item.foodfolkPsn2.name=偏方
+item.foodfolkPsn3.name=偏方
+item.foodfolkPsn4.name=偏方
+item.foodfolkPsn5.name=偏方
+item.foodfolkPsn6.name=偏方
 
 itemGroup.etech_tab=简单科技

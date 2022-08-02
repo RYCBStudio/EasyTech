@@ -1,6 +1,7 @@
 package com.rycb.etech.items.base.tools;
 
 import com.rycb.etech.EasyTech;
+import com.rycb.etech.init.ModItems;
 import com.rycb.etech.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemAxe;
@@ -14,6 +15,7 @@ public class ToolAxe extends ItemAxe implements IHasModel {
         setUnlocalizedName("axe" + UnlocalizedName);
         setRegistryName(RegistryName + "_axe");
         setCreativeTab(tab);
+        ModItems.ITEMS.add(this);
     }
 
     @Override

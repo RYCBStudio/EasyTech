@@ -17,6 +17,7 @@ import net.minecraftforge.common.util.EnumHelper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class ModItems {
     public static final List<Item> ITEMS = new ArrayList<Item>();
@@ -73,7 +74,18 @@ public class ModItems {
     public static final Item SULFUR_CHOCOLATE = new EffectFoodBase("SulfurChocolate", "sulfur_chocolate", 4, 1.4f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.POISON, 60 * 20, 2), new PotionEffect(MobEffects.WITHER, 60 * 20, 2), new PotionEffect(MobEffects.NAUSEA, 120 * 20, 3));
     public static final Item CHOCOLATE = new EffectFoodBase("chocolate", "chocolate", 10, 2.0f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.HASTE, 120 * 60, 3), new PotionEffect(MobEffects.GLOWING, 120 * 60, 2), new PotionEffect(MobEffects.REGENERATION, 120 * 60, 3));
 
+    /*Folk Prescriptions*/
     public static final Item FOLK_PRESCRIPTION_1 = new ItemFolkPrescription(1, 5, 10.0f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.REGENERATION, 80 * 20, 1), new PotionEffect(MobEffects.HUNGER, 50 * 20, 2), new PotionEffect(MobEffects.SLOWNESS, 40 * 20, 1));
+
+    public static final Item FOLK_PRESCRIPTION_2 = new ItemFolkPrescription(2, new Random().nextInt(10), 7.8f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.ABSORPTION, 80 * 20, 3), new PotionEffect(MobEffects.BLINDNESS, 25 * 20, 1), null);
+
+    public static final Item FOLK_PRESCRIPTION_3 = new ItemFolkPrescription(3, new Random().nextInt(10), 2.1f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.RESISTANCE, 80 * 20, 2), new PotionEffect(MobEffects.WEAKNESS, 60 * 20, 2), new PotionEffect(MobEffects.LEVITATION, 20 * 20, 1));
+
+    public static final Item FOLK_PRESCRIPTION_4 = new ItemFolkPrescription(4, new Random().nextInt(10), 1.14154f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.WATER_BREATHING, 80 * 20, 2), new PotionEffect(MobEffects.MINING_FATIGUE, 15 * 20, 3), null);
+
+    public static final Item FOLK_PRESCRIPTION_5 = new ItemFolkPrescription(5, new Random().nextInt(10), 1.919810f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.HEALTH_BOOST, 80 * 20, 4), new PotionEffect(MobEffects.POISON, 10 * 20, 1), new PotionEffect(MobEffects.UNLUCK, 40 * 20, 2));
+
+    public static final Item FOLK_PRESCRIPTION_6 = new ItemFolkPrescription(6, new Random().nextInt(10), 5.55f, false, EasyTech.ETECH_TAB, new PotionEffect(MobEffects.STRENGTH, 120 * 20, 2), new PotionEffect(MobEffects.NIGHT_VISION, 120 * 20, 2), new PotionEffect(MobEffects.REGENERATION, 120 * 20, 5));
 
     /**
      * Partially Prepared Products

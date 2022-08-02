@@ -28,6 +28,12 @@ tile.oreSulfur.name=Sulfur Ore
 
 item.foodSulfurChocolate.name=Sulfur Chocolate
 item.foodchocolate.name=Chocolate
-item.foodfolkPsn1.name=Folk Prescription No.1
+
+item.foodfolkPsn1.name=Folk Prescription
+item.foodfolkPsn2.name=Folk Prescription
+item.foodfolkPsn3.name=Folk Prescription
+item.foodfolkPsn4.name=Folk Prescription
+item.foodfolkPsn5.name=Folk Prescription
+item.foodfolkPsn6.name=Folk Prescription
 
 itemGroup.etech_tab=Easy Tech

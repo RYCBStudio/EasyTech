@@ -1,6 +1,7 @@
 package com.rycb.etech.items.base.tools;
 
 import com.rycb.etech.EasyTech;
+import com.rycb.etech.init.ModItems;
 import com.rycb.etech.util.IHasModel;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemSword;
@@ -11,6 +12,7 @@ public class ToolSword extends ItemSword implements IHasModel {
         setUnlocalizedName("sword"+UnlocalizedName);
         setRegistryName(RegistryName+"_sword");
         setCreativeTab(tab);
+        ModItems.ITEMS.add(this);
     }
 
     @Override
