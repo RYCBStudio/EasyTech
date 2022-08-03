@@ -58,7 +58,7 @@ public class ModItems {
     public static final ItemSpade STEEL_SHOVEL = new ToolShovel(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
 
     //In the game its name is "Modder Cheat Gun"
-    public static final Item MCG = new MCG();
+    public static final Item MCG = new MCG(MATERIAL_STEEL);
 
     /**
      * Armors
