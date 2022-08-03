@@ -4,6 +4,7 @@ import com.rycb.etech.EasyTech;
 import com.rycb.etech.block.base.BlockBase;
 import com.rycb.etech.block.base.BlockIngotBlockBase;
 import com.rycb.etech.block.base.BlockOreBase;
+import com.rycb.etech.block.fluids.FluidBlock;
 import com.rycb.etech.block.ores.SulfurOre;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -28,7 +29,8 @@ public class ModBlocks {
 
 
     /**
-     * Ingot Blocks
+     * Fluid Blocks
      */
-//    public static final Block COPPER_BLOCK = new BlockIngotBlockBase("Copper", "copper", Material.IRON, EasyTech.ETECH_TAB);
+    public static final Block OIL_BLOCK = new FluidBlock("oil", ModFluid.OIL, Material.WATER);
+
 }

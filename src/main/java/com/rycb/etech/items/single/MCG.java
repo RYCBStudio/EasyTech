@@ -15,6 +15,6 @@ public class MCG extends ToolSword {
     public MCG(ToolMaterial material) {
         super(material, "Icon", "icon_item", EasyTech.ETECH_TAB);
         setMaxDamage(1919810);
-        setDamage(new ItemStack(this, 1), 114514);
+        setDamage(new ItemStack(this), 100);
     }
 }

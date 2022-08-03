@@ -1,15 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    " S ",
-    " S",
-    " T "
+    " I ",
+    " I ",
+    " S "
   ],
   "key": {
-    "S": {
+    "I": {
       "item": "etech:steel_ingot"
     },
-    "T": {
+    "S": {
       "item": "minecraft:stick"
     }
   },

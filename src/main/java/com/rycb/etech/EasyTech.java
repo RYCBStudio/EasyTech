@@ -1,11 +1,14 @@
 package com.rycb.etech;
 
+import com.rycb.etech.init.ModFluid;
 import com.rycb.etech.init.ModRecipes;
 import com.rycb.etech.proxy.CommonProxy;
 import com.rycb.etech.tabs.ETechTab;
 import com.rycb.etech.util.Reference;
+import com.rycb.etech.util.handlers.RenderHandler;
 import com.rycb.etech.world.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -699,11 +702,20 @@ public class EasyTech {
 
     @Mod.Instance(Reference.MOD_ID)
     public static EasyTech instance;
+    @SidedProxy(clientSide = Reference.PROXY_CLIENT, serverSide = Reference.PROXY_SERVER)
+    public static CommonProxy proxy;
+    public static CreativeTabs ETECH_TAB = new ETechTab();
+
+    static {
+        FluidRegistry.enableUniversalBucket();
+    }
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
+        ModFluid.registerFluids();
+        RenderHandler.registerCustomMeshesAndStates();
     }
 
     @Mod.EventHandler
@@ -716,9 +728,4 @@ public class EasyTech {
     public void postInit(FMLPostInitializationEvent event) {
         proxy.postInit(event);
     }
-
-    @SidedProxy(clientSide = Reference.PROXY_CLIENT, serverSide = Reference.PROXY_SERVER)
-    public static CommonProxy proxy;
-
-    public static CreativeTabs ETECH_TAB = new ETechTab();
 }
