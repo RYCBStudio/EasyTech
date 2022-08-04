@@ -14,4 +14,6 @@ public class Reference {
     public static final String MC_VERSION = "[1.12.2]";
     public static final String PROXY_CLIENT = "com.rycb.etech.proxy.ClientProxy";
     public static final String PROXY_SERVER = "com.rycb.etech.proxy.CommonProxy";
+
+    public static final int WitherKing = 120;
 }

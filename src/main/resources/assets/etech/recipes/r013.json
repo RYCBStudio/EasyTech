@@ -2,20 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "GGG",
-    "GCG",
+    "GMG",
     "GGG"
   ],
   "key": {
     "G": {
       "item": "minecraft:gold_block"
     },
-    "C": {
-      "item": "minecraft:golden_carrot"
+    "M": {
+      "item": "minecraft:melon"
     }
   },
   "result": {
-    "item": "etech:enchanted_golden_carrot",
-    "data": 1,
+    "item": "etech:enchanted_glistening_melon",
     "count": 1
   }
 }

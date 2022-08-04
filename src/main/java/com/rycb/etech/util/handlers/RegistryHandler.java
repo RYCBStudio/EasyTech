@@ -1,6 +1,7 @@
 package com.rycb.etech.util.handlers;
 
 
+import com.rycb.etech.entity.EntityInit;
 import com.rycb.etech.init.ModBlocks;
 import com.rycb.etech.init.ModItems;
 import com.rycb.etech.util.IHasModel;
@@ -38,5 +39,15 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void onBlockRegister(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+    }
+
+    public static void preInitRegistries() {
+        RenderHandler.registerEntityRenders();
+        RenderHandler.registerCustomMeshesAndStates();
+        EntityInit.registerEntities();
+    }
+
+    public static void initRegistries() {
+
     }
 }

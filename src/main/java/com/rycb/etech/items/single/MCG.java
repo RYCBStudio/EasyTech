@@ -14,6 +14,7 @@ import java.util.Random;
  * <h1><center>MCG</center></h1>
  */
 public class MCG extends ToolSword {
+
     public MCG(ToolMaterial material) {
         super(material, "Icon", "icon_item", EasyTech.ETECH_TAB);
         int MaxDamage = new Random().nextInt();

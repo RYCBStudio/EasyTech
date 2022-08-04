@@ -4,9 +4,13 @@ import com.rycb.etech.EasyTech;
 import com.rycb.etech.init.ModItems;
 import com.rycb.etech.util.IHasModel;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
+
+import static com.rycb.etech.items.single.EnchantedGlisteningMelon.normalEnchantedFoodEffectsAdder;
 
 /**
  * @author RYCBStudio/Java Department
@@ -15,12 +19,12 @@ import net.minecraft.world.World;
  * <p>Location: EasyTech/com.rycb.etech.items.single/EnchantedGoldenCarrot.java</p>
  * <h1><center>EnchantedGoldenCarrot</center></h1>
  */
-public class EnchantedGoldenCarrot extends ItemFood implements IHasModel {
+public class GlisteningMelon extends ItemFood implements IHasModel {
 
-    public EnchantedGoldenCarrot() {
+    public GlisteningMelon() {
         super(3, 8.4f, false);
-        setRegistryName("enchanted_golden_carrot");
-        setUnlocalizedName("enchantedGoldenCarrot");
+        setRegistryName("glistening_melon");
+        setUnlocalizedName("glisteningMelon");
         setAlwaysEdible();
         ModItems.ITEMS.add(this);
     }
@@ -32,6 +36,6 @@ public class EnchantedGoldenCarrot extends ItemFood implements IHasModel {
 
     @Override
     protected void onFoodEaten(ItemStack stack, World worldIn, EntityPlayer player) {
-        EnchantedGlisteningMelon.normalEnchantedFoodEffectsAdder(player);
+        normalEnchantedFoodEffectsAdder(player);
     }
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GMG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "M": {
+      "item": "etech:glistening_melon"
+    }
+  },
+  "result": {
+    "item": "etech:enchanted_glistening_melon",
+    "count": 1
+  }
+}

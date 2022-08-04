@@ -36,7 +36,12 @@ item.foodfolkPsn3.name=偏方
 item.foodfolkPsn4.name=偏方
 item.foodfolkPsn5.name=偏方
 item.foodfolkPsn6.name=偏方
+item.enchantedGoldenCarrot.name=附魔金胡萝卜
+item.enchantedGlisteningMelon.name=附魔的闪烁的西瓜
+item.glisteningMelon.name=闪烁的西瓜
 
 itemGroup.etech_tab=简单科技
+
+entity.wither_king.name=凋零王
 
 fluid.oil=石油

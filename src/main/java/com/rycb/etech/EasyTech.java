@@ -1,10 +1,12 @@
 package com.rycb.etech;
 
+import com.rycb.etech.entity.EntityInit;
 import com.rycb.etech.init.ModFluids;
 import com.rycb.etech.init.ModRecipes;
 import com.rycb.etech.proxy.CommonProxy;
 import com.rycb.etech.tabs.ETechTab;
 import com.rycb.etech.util.Reference;
+import com.rycb.etech.util.handlers.RegistryHandler;
 import com.rycb.etech.util.handlers.RenderHandler;
 import com.rycb.etech.world.ModWorldGen;
 import net.minecraft.creativetab.CreativeTabs;
@@ -715,7 +717,7 @@ public class EasyTech {
         proxy.preInit(event);
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
         ModFluids.registerFluids();
-        RenderHandler.registerCustomMeshesAndStates();
+        RegistryHandler.preInitRegistries();
     }
 
     @Mod.EventHandler

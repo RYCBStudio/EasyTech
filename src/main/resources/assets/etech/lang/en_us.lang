@@ -35,7 +35,12 @@ item.foodfolkPsn3.name=Folk Prescription
 item.foodfolkPsn4.name=Folk Prescription
 item.foodfolkPsn5.name=Folk Prescription
 item.foodfolkPsn6.name=Folk Prescription
+item.enchantedGoldenCarrot.name=Enchanted Golden Carrot
+item.enchantedGlisteningMelon.name=Enchanted Glistening Melon
+item.glisteningMelon.name=Glistening Melon
 
 itemGroup.etech_tab=Easy Tech
+
+entity.wither_king.name=Wither King
 
 fluid.oil=Oil
