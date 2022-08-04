@@ -9,8 +9,8 @@ import net.minecraft.item.ItemHoe;
 public class ToolHoe extends ItemHoe implements IHasModel {
     public ToolHoe(ToolMaterial material, String UnlocalizedName, String RegistryName, CreativeTabs tab) {
         super(material);
-        setUnlocalizedName("hoe"+UnlocalizedName);
-        setRegistryName(RegistryName+"_hoe");
+        setUnlocalizedName("hoe" + UnlocalizedName);
+        setRegistryName(RegistryName + "_hoe");
         setCreativeTab(tab);
         ModItems.ITEMS.add(this);
     }

@@ -1,6 +1,5 @@
 package com.rycb.etech.util.handlers;
 
-import com.rycb.etech.EasyTech;
 import com.rycb.etech.util.Reference;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;

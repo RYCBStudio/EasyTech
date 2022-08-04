@@ -3,9 +3,6 @@ package com.rycb.etech.proxy;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 /**
  * @author RYCBStudio
@@ -13,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
  * Location:Easy-Tech/com.rycb.etech.proxy/ClientProxy.java
  * Use the IntelliJ IDEA
  */
-public class ClientProxy extends CommonProxy{
+public class ClientProxy extends CommonProxy {
     /*
     @Override
     public void preInit(FMLPreInitializationEvent event)

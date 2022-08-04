@@ -9,8 +9,8 @@ import net.minecraft.item.ItemSpade;
 public class ToolShovel extends ItemSpade implements IHasModel {
     public ToolShovel(ToolMaterial material, String UnlocalizedName, String RegistryName, CreativeTabs tab) {
         super(material);
-        setUnlocalizedName("shovel"+UnlocalizedName);
-        setRegistryName(RegistryName+"_shovel");
+        setUnlocalizedName("shovel" + UnlocalizedName);
+        setRegistryName(RegistryName + "_shovel");
         setCreativeTab(tab);
         ModItems.ITEMS.add(this);
     }

@@ -1,7 +1,6 @@
 package com.rycb.etech.block.ores;
 
 import com.rycb.etech.block.base.BlockBase;
-import com.rycb.etech.block.base.BlockOreBase;
 import com.rycb.etech.init.ModItems;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;

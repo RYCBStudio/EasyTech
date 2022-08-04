@@ -12,12 +12,12 @@ import net.minecraft.item.ItemStack;
  * Use the IntelliJ IDEA
  */
 public class ETechTab extends CreativeTabs {
-    public ETechTab(){
+    public ETechTab() {
         super("etech_tab");
     }
+
     @Override
-    public ItemStack getTabIconItem()
-    {
+    public ItemStack getTabIconItem() {
         return new ItemStack(ModItems.MCG);
     }
 

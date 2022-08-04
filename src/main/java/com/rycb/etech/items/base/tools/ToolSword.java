@@ -9,8 +9,8 @@ import net.minecraft.item.ItemSword;
 public class ToolSword extends ItemSword implements IHasModel {
     public ToolSword(ToolMaterial material, String UnlocalizedName, String RegistryName, CreativeTabs tab) {
         super(material);
-        setUnlocalizedName("sword"+UnlocalizedName);
-        setRegistryName(RegistryName+"_sword");
+        setUnlocalizedName("sword" + UnlocalizedName);
+        setRegistryName(RegistryName + "_sword");
         setCreativeTab(tab);
         ModItems.ITEMS.add(this);
     }

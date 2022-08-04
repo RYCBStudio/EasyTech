@@ -12,10 +12,10 @@ import java.util.List;
  * @author RYCBStudio/Java Department
  * <p>Create Time: 2022/8/3 16:25</p>
  * <p>Use the IntelliJ IDEA</p>
- * <p>Location: EasyTech/com.rycb.etech.init/ModFluid.java</p>
- * <h1><center>ModFluid</center></h1>
+ * <p>Location: EasyTech/com.rycb.etech.init/ModFluids.java</p>
+ * <h1><center>ModFluids</center></h1>
  */
-public class ModFluid {
+public class ModFluids {
 
     public static final List<Fluid> FLUIDS = new ArrayList<Fluid>();
 

@@ -1,8 +1,6 @@
 package com.rycb.etech.init;
 
 import com.rycb.etech.EasyTech;
-import com.rycb.etech.block.base.BlockBase;
-import com.rycb.etech.block.base.BlockIngotBlockBase;
 import com.rycb.etech.block.base.BlockOreBase;
 import com.rycb.etech.block.fluids.FluidBlock;
 import com.rycb.etech.block.ores.SulfurOre;
@@ -31,6 +29,6 @@ public class ModBlocks {
     /**
      * Fluid Blocks
      */
-    public static final Block OIL_BLOCK = new FluidBlock("oil", ModFluid.OIL, Material.WATER);
+    public static final Block OIL_BLOCK = new FluidBlock("oil", ModFluids.OIL, Material.WATER);
 
 }
