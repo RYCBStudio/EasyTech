@@ -45,6 +45,8 @@ public class ModItems {
      */
     public static final Item.ToolMaterial MATERIAL_STEEL = EnumHelper.addToolMaterial("material_steel", 2, 1200, 8.5f, 2.5f, 20);
 
+    protected static int damage = new Random().nextInt();
+    public static final Item.ToolMaterial MATERIAL_MCG = EnumHelper.addToolMaterial("material_mcg", 4, 1919810, 32.64f, Math.max(damage, 114514), 80);
     public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_STEEL = EnumHelper.addArmorMaterial("armor_material_steel", Reference.MOD_ID + ":steel", 17, new int[]{5, 10, 7, 3}, 22, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.25f);
 
 
@@ -58,7 +60,7 @@ public class ModItems {
     public static final ItemSpade STEEL_SHOVEL = new ToolShovel(MATERIAL_STEEL, "Steel", "steel", EasyTech.ETECH_TAB);
 
     //In the game its name is "Modder Cheat Gun"
-    public static final Item MCG = new MCG(MATERIAL_STEEL);
+    public static final Item MCG = new MCG(MATERIAL_MCG);
 
     /**
      * Armors
