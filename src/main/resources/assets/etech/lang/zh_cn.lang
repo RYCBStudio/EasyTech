@@ -20,6 +20,11 @@ item.cplateSteel.name=钢胸甲
 item.leggingsSteel.name=钢护腿
 item.bootsSteel.name=钢靴子
 
+item.helmetRP.name=防辐射头盔
+item.cplateRP.name=防辐射胸甲
+item.leggingsRP.name=防辐射护腿
+item.bootsRP.name=防辐射靴子
+
 tile.oreCopper.name=铜矿石
 tile.oreTin.name=锡矿石
 tile.oreLead.name=铅矿石

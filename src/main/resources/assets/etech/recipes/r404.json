@@ -1,14 +1,11 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "SSN",
+    "NNN",
     "GWP",
     "AOH"
   ],
   "key": {
-    "S": {
-      "item": "etech:steel_ingot"
-    },
     "N": {
       "item": "minecraft:nether_star"
     },

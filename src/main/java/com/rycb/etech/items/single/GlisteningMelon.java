@@ -4,10 +4,8 @@ import com.rycb.etech.EasyTech;
 import com.rycb.etech.init.ModItems;
 import com.rycb.etech.util.IHasModel;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
-import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
 
 import static com.rycb.etech.items.single.EnchantedGlisteningMelon.normalEnchantedFoodEffectsAdder;

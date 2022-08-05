@@ -19,6 +19,11 @@ item.cplateSteel.name=Steel Chestplate
 item.leggingsSteel.name=Steel Leggings
 item.bootsSteel.name=Steel Boots
 
+item.helmetRP.name=Radiation Protection Helmet
+item.cplateRP.name=Radiation Protection Chestplate
+item.leggingsRP.name=Radiation Protection Leggings
+item.bootsRP.name=Radiation Protection Boots
+
 tile.oreCopper.name=Copper Ore
 tile.oreTin.name=Tin Ore
 tile.oreLead.name=Lead Ore

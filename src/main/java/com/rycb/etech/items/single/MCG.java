@@ -2,7 +2,6 @@ package com.rycb.etech.items.single;
 
 import com.rycb.etech.EasyTech;
 import com.rycb.etech.items.base.tools.ToolSword;
-import net.minecraft.item.ItemStack;
 
 import java.util.Random;
 
@@ -17,6 +16,7 @@ public class MCG extends ToolSword {
 
     public MCG(ToolMaterial material) {
         super(material, "Icon", "icon_item", EasyTech.ETECH_TAB);
+        setNoRepair();
         int MaxDamage = new Random().nextInt();
         setMaxDamage(Math.max(MaxDamage, 1919810));
     }

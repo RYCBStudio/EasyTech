@@ -1,17 +1,17 @@
 [
-{
-  "modid": "etech",
-  "name": "Easy Tech",
-  "description": "A simple, convenient, useful and surrealistic industrial mod",
-  "version": "0.0.1",
-  "mcversion": "${mcversion}",
-  "url": "https://github.com/RYCBStudio/EasyTech",
-  "updateUrl": "",
-  "authorList": [
-    "RYCBStudio"
-  ],
-  "logoFile": "Etech_logo.png",
-  "screenshots": [],
-  "dependencies": []
-}
+  {
+    "modid": "etech",
+    "name": "Easy Tech",
+    "description": "A simple, convenient, useful and surrealistic industrial mod",
+    "version": "0.0.1",
+    "mcversion": "${mcversion}",
+    "url": "https://github.com/RYCBStudio/EasyTech",
+    "updateUrl": "",
+    "authorList": [
+      "RYCBStudio"
+    ],
+    "logoFile": "Etech_logo.png",
+    "screenshots": [],
+    "dependencies": []
+  }
 ]

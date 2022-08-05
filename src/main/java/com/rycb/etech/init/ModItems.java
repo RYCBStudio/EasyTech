@@ -47,7 +47,8 @@ public class ModItems {
      * Materials
      */
     public static final Item.ToolMaterial MATERIAL_STEEL = EnumHelper.addToolMaterial("material_steel", 2, 1200, 8.5f, 2.5f, 20);
-    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_STEEL = EnumHelper.addArmorMaterial("armor_material_steel", Reference.MOD_ID + ":steel", 17, new int[]{5, 10, 7, 3}, 22, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.25f);
+    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_STEEL = EnumHelper.addArmorMaterial("armor_material_steel", Reference.MOD_ID + ":steel", 17, new int[]{3, 7, 10, 5}, 22, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 2.25f);
+    public static final ItemArmor.ArmorMaterial ARMOR_MATERIAL_RADIATION_PROTECTION = EnumHelper.addArmorMaterial("armor_material_radiation_protection", Reference.MOD_ID + ":radiation_protection", 30, new int[]{4, 8, 12, 6}, 10, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 3.0f);
     /**
      * Tools
      */
@@ -63,6 +64,11 @@ public class ModItems {
     public static final Item STEEL_CHESTPLATE = new ArmorBase(ARMOR_MATERIAL_STEEL, 1, EntityEquipmentSlot.CHEST, "cplateSteel", "steel_chestplate", EasyTech.ETECH_TAB);
     public static final Item STEEL_LEGGINGS = new ArmorBase(ARMOR_MATERIAL_STEEL, 2, EntityEquipmentSlot.LEGS, "leggingsSteel", "steel_leggings", EasyTech.ETECH_TAB);
     public static final Item STEEL_BOOTS = new ArmorBase(ARMOR_MATERIAL_STEEL, 1, EntityEquipmentSlot.FEET, "bootsSteel", "steel_boots", EasyTech.ETECH_TAB);
+
+    public static final Item RADIATION_PROTECTION_HELMET = new ArmorBase(ARMOR_MATERIAL_RADIATION_PROTECTION, 1, EntityEquipmentSlot.HEAD, "helmetRP", "rp_helmet", EasyTech.ETECH_TAB);
+    public static final Item RADIATION_PROTECTION_CHESTPLATE = new ArmorBase(ARMOR_MATERIAL_RADIATION_PROTECTION, 1, EntityEquipmentSlot.CHEST, "cplateRP", "rp_chestplate", EasyTech.ETECH_TAB);
+    public static final Item RADIATION_PROTECTION_LEGGINGS = new ArmorBase(ARMOR_MATERIAL_RADIATION_PROTECTION, 2, EntityEquipmentSlot.LEGS, "leggingsRP", "rp_leggings", EasyTech.ETECH_TAB);
+    public static final Item RADIATION_PROTECTION_BOOTS = new ArmorBase(ARMOR_MATERIAL_RADIATION_PROTECTION, 1, EntityEquipmentSlot.FEET, "bootsRP", "rp_boots", EasyTech.ETECH_TAB);
     /**
      * Foods
      */
@@ -87,7 +93,9 @@ public class ModItems {
     public static final Item RAW_PLASTIC = new ItemBasicBase("rawPlastic", "raw_plastic", EasyTech.ETECH_TAB);
     protected static int damage = new Random().nextInt();
     protected static int harvestLevel = new Random().nextInt();
-    public static final Item.ToolMaterial MATERIAL_MCG = EnumHelper.addToolMaterial("material_mcg", Math.max(harvestLevel, 4), 1919810, 32.64f, Math.max(damage, 114514), 80);
+    protected static float efficiency = new Random().nextFloat();
+    protected static int enchantability = new Random().nextInt();
+    public static final Item.ToolMaterial MATERIAL_MCG = EnumHelper.addToolMaterial("material_mcg", Math.max(harvestLevel, 4), 1919810, Math.max(efficiency, 64.0f), Math.max(damage, 114514), Math.max(enchantability, 80));
     //In the game its name is "Modder Cheat Gun"
     public static final Item MCG = new MCG(MATERIAL_MCG);
 }
