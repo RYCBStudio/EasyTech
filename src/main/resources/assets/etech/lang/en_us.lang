@@ -31,7 +31,7 @@ tile.oreTin.name=Tin Ore
 tile.oreLead.name=Lead Ore
 tile.oreSulfur.name=Sulfur Ore
 tile.oreUranium.name=Uranium Ore
-
+tile.oreFluorite.name=Fluorite Ore
 
 item.foodSulfurChocolate.name=Sulfur Chocolate
 item.foodchocolate.name=Chocolate

@@ -3,6 +3,7 @@ package com.rycb.etech.init;
 import com.rycb.etech.EasyTech;
 import com.rycb.etech.block.base.BlockOreBase;
 import com.rycb.etech.block.fluids.FluidBlock;
+import com.rycb.etech.block.ores.FluoriteOre;
 import com.rycb.etech.block.ores.SulfurOre;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -27,7 +28,7 @@ public class ModBlocks {
 
     public static final Block URANIUM_ORE = new BlockOreBase("Uranium", "uranium", Material.ROCK, EasyTech.ETECH_TAB);
 
-    public static final Block FLUORITE_ORE = new BlockOreBase("Fluorite", "fluorite", Material.ROCK, EasyTech.ETECH_TAB);
+    public static final Block FLUORITE_ORE = new FluoriteOre();
     /**
      * Fluid Blocks
      */
