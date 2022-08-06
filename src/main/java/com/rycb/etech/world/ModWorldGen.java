@@ -24,15 +24,16 @@ public class ModWorldGen implements IWorldGenerator {
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
         if (world.provider.getDimension() == 0) {
             generateOverworld(random, chunkX, chunkZ, world, chunkGenerator, chunkProvider);
-
         }
     }
 
     private void generateOverworld(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
         generateOre(ModBlocks.SULFUR_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 32, 4, 72, random.nextInt(6) + 1, 5);
         generateOre(ModBlocks.COPPER_ORE.getDefaultState(), world, random, chunkX * 6, chunkZ * 16, 2, 59, random.nextInt(3) + 1, 3);
-        generateOre(ModBlocks.LEAD_ORE.getDefaultState(), world, random, chunkX * 8, chunkZ * 16, 1, 63, random.nextInt(3) + 1, 3);
-        generateOre(ModBlocks.TIN_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 1, 39, random.nextInt(3) + 1, 3);
+        generateOre(ModBlocks.LEAD_ORE.getDefaultState(), world, random, chunkX * 8, chunkZ * 16, 1, 63, random.nextInt(3) + 1, 4);
+        generateOre(ModBlocks.TIN_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 1, 39, random.nextInt(3) + 1, 4);
+        generateOre(ModBlocks.URANIUM_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 1, 62, random.nextInt(4) + 1, 5);
+        generateOre(ModBlocks.FLUORITE_ORE.getDefaultState(), world, random, chunkX * 16, chunkZ * 16, 1, 69, random.nextInt(5) + 1, 6);
     }
 
 
@@ -41,7 +42,6 @@ public class ModWorldGen implements IWorldGenerator {
 
         for (int i = 0; i < chances; i++) {
             BlockPos pos = new BlockPos(x + random.nextInt(16), minY + random.nextInt(deltaY), z + random.nextInt(16));
-
             WorldGenMinable generator = new WorldGenMinable(ore, size);
         }
     }

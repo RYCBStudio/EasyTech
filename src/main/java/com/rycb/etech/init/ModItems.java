@@ -5,6 +5,7 @@ import com.rycb.etech.armors.ArmorBase;
 import com.rycb.etech.food.EffectFoodBase;
 import com.rycb.etech.items.base.ItemBasicBase;
 import com.rycb.etech.items.base.ItemFolkPrescription;
+import com.rycb.etech.items.base.ItemGemBase;
 import com.rycb.etech.items.base.ItemIngotBase;
 import com.rycb.etech.items.base.tools.*;
 import com.rycb.etech.items.single.EnchantedGlisteningMelon;
@@ -44,6 +45,7 @@ public class ModItems {
 
     public static final Item URANIUM_INGOT = new ItemIngotBase("Uranium", "uranium", EasyTech.ETECH_TAB);
 
+    public static final Item FLUORITE_GEM = new ItemGemBase("Fluorite", "fluorite", EasyTech.ETECH_TAB);
     /**
      * Materials
      */
