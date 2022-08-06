@@ -42,6 +42,7 @@ public class ModItems {
 
     public static final Item PLASTIC = new ItemBasicBase("plastic", "plastic", EasyTech.ETECH_TAB);
 
+    public static final Item URANIUM_INGOT = new ItemIngotBase("Uranium", "uranium", EasyTech.ETECH_TAB);
 
     /**
      * Materials

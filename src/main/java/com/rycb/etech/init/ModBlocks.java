@@ -25,6 +25,7 @@ public class ModBlocks {
 
     public static final Block SULFUR_ORE = new SulfurOre("oreSulfur", "sulfur_ore", Material.ROCK, EasyTech.ETECH_TAB);
 
+    public static final Block URANIUM_ORE = new BlockOreBase("Uranium", "uranium", Material.ROCK, EasyTech.ETECH_TAB);
 
     /**
      * Fluid Blocks

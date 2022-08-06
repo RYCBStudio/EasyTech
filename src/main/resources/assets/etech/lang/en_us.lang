@@ -3,6 +3,7 @@ item.ingotTin.name=Tin Ingot
 item.ingotCopper.name=Copper Ingot
 item.ingotLead.name=Lead Ingot
 item.sulfur.name=Sulfur
+item.ingotUranium.name=Uranium
 item.swordIcon.name=Modder Cheat Gun
 item.ChocolateProembryo.name=Chocolate Proembryo
 item.rawPlastic.name=Raw Plastic
@@ -28,7 +29,7 @@ tile.oreCopper.name=Copper Ore
 tile.oreTin.name=Tin Ore
 tile.oreLead.name=Lead Ore
 tile.oreSulfur.name=Sulfur Ore
-
+tile.oreUranium.name=Uranium Ore
 
 
 item.foodSulfurChocolate.name=Sulfur Chocolate

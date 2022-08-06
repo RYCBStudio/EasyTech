@@ -2,6 +2,7 @@ item.ingotSteel.name=钢锭
 item.ingotTin.name=锡锭
 item.ingotCopper.name=铜锭
 item.ingotLead.name=铅锭
+item.ingotUranium.name=铀锭
 item.sulfur.name=硫粉
 item.ChocolateProembryo.name=巧克力原胚
 item.rawPlastic.name=塑料原料
@@ -29,6 +30,7 @@ tile.oreCopper.name=铜矿石
 tile.oreTin.name=锡矿石
 tile.oreLead.name=铅矿石
 tile.oreSulfur.name=硫矿石
+tile.oreUranium.name=铀矿石
 
 
 

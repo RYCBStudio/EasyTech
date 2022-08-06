@@ -7,7 +7,11 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class ItemBasicBase extends Item implements IHasModel {
-
+    /**
+     * @param UnlocalizedName 未初始化名
+     * @param RegistryName    注册名
+     * @param tab             创造模式物品栏
+     */
     public ItemBasicBase(String UnlocalizedName, String RegistryName, CreativeTabs tab) {
         setUnlocalizedName(UnlocalizedName);
         setCreativeTab(tab);

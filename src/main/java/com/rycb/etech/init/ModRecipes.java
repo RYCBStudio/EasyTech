@@ -16,6 +16,7 @@ public class ModRecipes {
         GameRegistry.addSmelting(ModBlocks.SULFUR_ORE, new ItemStack(ModItems.SULFUR, 1), 0.6f);
         GameRegistry.addSmelting(ModItems.CHOCOLATE_PROEMBRYO, new ItemStack(ModItems.CHOCOLATE, random.nextInt(3) + 1), 0.7f);
         GameRegistry.addSmelting(ModItems.RAW_PLASTIC, new ItemStack(ModItems.PLASTIC, 1), 0.9f);
+        GameRegistry.addSmelting(ModBlocks.URANIUM_ORE, new ItemStack(ModItems.URANIUM_INGOT, 1), 0.8f);
     }
 
 }
