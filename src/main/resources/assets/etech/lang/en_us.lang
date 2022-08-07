@@ -3,12 +3,15 @@ item.ingotTin.name=Tin Ingot
 item.ingotCopper.name=Copper Ingot
 item.ingotLead.name=Lead Ingot
 item.sulfur.name=Sulfur
-item.ingotUranium.name=Uranium
+item.ingotUranium.name=Uranium Ingot
+item.ingotAluminium.name=Aluminium Ingot
 item.gemFluorite.name=Fluorite
+item.pickaxemcp.name=Modder Cheat Pickaxe
 item.swordIcon.name=Modder Cheat Gun
 item.ChocolateProembryo.name=Chocolate Proembryo
 item.rawPlastic.name=Raw Plastic
 item.plastic.name=Plastic
+item.ingotRadium.name=Radium Ingot
 
 item.axeSteel.name=Steel Axe
 item.shovelSteel.name=Steel Shovel
@@ -32,6 +35,8 @@ tile.oreLead.name=Lead Ore
 tile.oreSulfur.name=Sulfur Ore
 tile.oreUranium.name=Uranium Ore
 tile.oreFluorite.name=Fluorite Ore
+tile.oreAluminium.name=Aluminium Ore
+tile.oreRadium.name=Radium Ore
 
 item.foodSulfurChocolate.name=Sulfur Chocolate
 item.foodchocolate.name=Chocolate
@@ -51,3 +56,4 @@ itemGroup.etech_tab=Easy Tech
 entity.wither_king.name=Wither King
 
 fluid.oil=Oil
+fluid.liquid_nitrogen=Liquid nitrogen

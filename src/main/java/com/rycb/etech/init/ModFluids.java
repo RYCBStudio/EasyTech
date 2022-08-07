@@ -20,6 +20,7 @@ public class ModFluids {
     public static final List<Fluid> FLUIDS = new ArrayList<Fluid>();
 
     public static final Fluid OIL = new FluidLiquid("oil", new ResourceLocation("etech:blocks/oil_still"), new ResourceLocation("etech:blocks/oil_flow"));
+    public static final Fluid LIQUID_NITROGEN = new FluidLiquid("liquid_nitrogen", new ResourceLocation("etech:blocks/liquid_nitrogen_still"), new ResourceLocation("etech:block/liquid_nitrogen_flow"));
 
     public static void registerFluids() {
         for (Fluid fluid : FLUIDS) {

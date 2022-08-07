@@ -7,7 +7,7 @@ import java.util.Random;
 
 public class ModRecipes {
 
-    static Random random = new Random();
+    protected static final Random random = new Random();
 
     public static void init() {
         GameRegistry.addSmelting(ModBlocks.COPPER_ORE, new ItemStack(ModItems.COPPER_INGOT, 1), 0.8f);
@@ -18,6 +18,8 @@ public class ModRecipes {
         GameRegistry.addSmelting(ModItems.RAW_PLASTIC, new ItemStack(ModItems.PLASTIC, 1), 0.9f);
         GameRegistry.addSmelting(ModBlocks.URANIUM_ORE, new ItemStack(ModItems.URANIUM_INGOT, 1), 0.8f);
         GameRegistry.addSmelting(ModBlocks.FLUORITE_ORE, new ItemStack(ModItems.FLUORITE_GEM, 1), 0.8f);
+        GameRegistry.addSmelting(ModBlocks.ALUMINIUM_ORE, new ItemStack(ModItems.ALUMINIUM_INGOT, 1), 0.8f);
+        GameRegistry.addSmelting(ModBlocks.RADIUM_ORE, new ItemStack(ModItems.RADIUM_INGOT, 1), .8f);
     }
 
 }

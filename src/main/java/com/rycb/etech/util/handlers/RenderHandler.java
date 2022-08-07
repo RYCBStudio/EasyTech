@@ -20,6 +20,18 @@ import net.minecraftforge.fml.client.registry.RenderingRegistry;
 
 public class RenderHandler {
     public static void registerCustomMeshesAndStates() {
+        ModelLoader.setCustomMeshDefinition(Item.getItemFromBlock(ModBlocks.LIQUID_NITROGEN), stack -> {
+            //这里是你的modid:流体名称
+            return new ModelResourceLocation("etech:liquid_nitrogen", "fluid");
+        });
+
+        ModelLoader.setCustomStateMapper(ModBlocks.LIQUID_NITROGEN, new StateMapperBase() {
+            protected ModelResourceLocation getModelResourceLocation(IBlockState state) {
+                //这里是你的modid:流体名称
+                return new ModelResourceLocation("etech:liquid_nitrogen", "fluid");
+            }
+        });
+
         ModelLoader.setCustomMeshDefinition(Item.getItemFromBlock(ModBlocks.OIL_BLOCK), stack -> {
             //这里是你的modid:流体名称
             return new ModelResourceLocation("etech:oil", "fluid");

@@ -8,7 +8,11 @@ item.ChocolateProembryo.name=巧克力原胚
 item.rawPlastic.name=塑料原料
 item.plastic.name=塑料
 item.gemFluorite.name=荧石
+item.ingotAluminium.name=铝锭
+item.ingotRadium.name=镭锭
 
+
+item.pickaxemcp.name=Modder Cheat Pickaxe
 item.swordIcon.name=Modder Cheat Gun
 
 item.axeSteel.name=钢斧
@@ -32,7 +36,9 @@ tile.oreTin.name=锡矿石
 tile.oreLead.name=铅矿石
 tile.oreSulfur.name=硫矿石
 tile.oreUranium.name=铀矿石
-
+tile.oreAluminium.name=铝矿石
+tile.oreRadium.name=镭矿石
+tile.oreFluorite.name=荧石矿石
 
 
 item.foodSulfurChocolate.name=硫巧克力
@@ -53,3 +59,4 @@ itemGroup.etech_tab=简单科技
 entity.wither_king.name=凋零王
 
 fluid.oil=石油
+fluid.liquid_nitrogen=液氮

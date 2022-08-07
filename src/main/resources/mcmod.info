@@ -3,6 +3,7 @@
     "modid": "etech",
     "name": "Easy Tech",
     "description": "A simple, convenient, useful and surrealistic industrial mod",
+    "credits": "Thanks to MCreator, it saves me a lot of time in drawing textures",
     "version": "0.0.1",
     "mcversion": "${mcversion}",
     "url": "https://github.com/RYCBStudio/EasyTech",

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NDN",
+    "NAN",
+    "PNN"
+  ],
+  "key": {
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "A": {
+      "item": "etech:steel_pickaxe"
+    },
+    "P": {
+      "item": "etech:plastic"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    }
+  },
+  "result": {
+    "item": "etech:mcp",
+    "count": 1
+  }
+}

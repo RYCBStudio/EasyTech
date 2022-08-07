@@ -29,9 +29,15 @@ public class ModBlocks {
     public static final Block URANIUM_ORE = new BlockOreBase("Uranium", "uranium", Material.ROCK, EasyTech.ETECH_TAB);
 
     public static final Block FLUORITE_ORE = new FluoriteOre();
+
+    public static final Block ALUMINIUM_ORE = new BlockOreBase("Aluminium", "aluminium", Material.ROCK, EasyTech.ETECH_TAB);
+
+    public static final Block RADIUM_ORE = new BlockOreBase("Radium", "radium", Material.ROCK, EasyTech.ETECH_TAB);
+
     /**
      * Fluid Blocks
      */
     public static final Block OIL_BLOCK = new FluidBlock("oil", ModFluids.OIL, Material.WATER);
+    public static final Block LIQUID_NITROGEN = new FluidBlock("liquid_nitrogen", ModFluids.LIQUID_NITROGEN, Material.WATER);
 
 }

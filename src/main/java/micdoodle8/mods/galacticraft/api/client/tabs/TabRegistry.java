@@ -19,9 +19,9 @@ import java.util.List;
 public class TabRegistry {
     public static Class<?> clazzNEIConfig = null;
     public static int recipeBookOffset;
-    private static ArrayList<AbstractTab> tabList = new ArrayList<AbstractTab>();
+    private static final ArrayList<AbstractTab> tabList = new ArrayList<AbstractTab>();
     private static Class<?> clazzJEIConfig = null;
-    private static Minecraft mc = FMLClientHandler.instance().getClient();
+    private static final Minecraft mc = FMLClientHandler.instance().getClient();
     private static boolean initWithPotion;
 
     static {

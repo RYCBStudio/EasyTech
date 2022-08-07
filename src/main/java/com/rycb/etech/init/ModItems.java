@@ -11,7 +11,8 @@ import com.rycb.etech.items.base.tools.*;
 import com.rycb.etech.items.single.EnchantedGlisteningMelon;
 import com.rycb.etech.items.single.EnchantedGoldenCarrot;
 import com.rycb.etech.items.single.GlisteningMelon;
-import com.rycb.etech.items.single.MCG;
+import com.rycb.etech.items.single.cheating.MCG;
+import com.rycb.etech.items.single.cheating.MCP;
 import com.rycb.etech.util.Reference;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
@@ -44,6 +45,10 @@ public class ModItems {
     public static final Item PLASTIC = new ItemBasicBase("plastic", "plastic", EasyTech.ETECH_TAB);
 
     public static final Item URANIUM_INGOT = new ItemIngotBase("Uranium", "uranium", EasyTech.ETECH_TAB);
+
+    public static final Item ALUMINIUM_INGOT = new ItemIngotBase("Aluminium", "aluminium", EasyTech.ETECH_TAB);
+
+    public static final Item RADIUM_INGOT = new ItemIngotBase("Radium", "radium", EasyTech.ETECH_TAB);
 
     public static final Item FLUORITE_GEM = new ItemGemBase("Fluorite", "fluorite", EasyTech.ETECH_TAB);
     /**
@@ -98,7 +103,8 @@ public class ModItems {
     protected static int harvestLevel = new Random().nextInt();
     protected static float efficiency = new Random().nextFloat();
     protected static int enchantability = new Random().nextInt();
-    public static final Item.ToolMaterial MATERIAL_MCG = EnumHelper.addToolMaterial("material_mcg", Math.max(harvestLevel, 4), 1919810, Math.max(efficiency, 64.0f), Math.max(damage, 114514), Math.max(enchantability, 80));
+    public static final Item.ToolMaterial MATERIAL_ModderCheat = EnumHelper.addToolMaterial("material_mcg", Math.max(harvestLevel, 4), 1919810, Math.max(efficiency, 114.514f), Math.max(damage, 114514), Math.max(enchantability, 80));
     //In the game its name is "Modder Cheat Gun"
-    public static final Item MCG = new MCG(MATERIAL_MCG);
+    public static final Item MCG = new MCG(MATERIAL_ModderCheat);
+    public static final Item MCP = new MCP(MATERIAL_ModderCheat);
 }
