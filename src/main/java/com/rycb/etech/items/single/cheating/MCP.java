@@ -16,8 +16,9 @@ public class MCP extends ToolPickaxe {
     public MCP(ToolMaterial material) {
         super(material, "mcp", "mcp", EasyTech.ETECH_TAB);
         setNoRepair();
-        int MaxDamage = new Random().nextInt() + 114514;
+        int MaxDamage = new Random().nextInt() + 999999999;
         setMaxDamage(Math.max(MaxDamage, 1919810));
-        setHarvestLevel("pickaxe", 5);
+        setHarvestLevel("pickaxe", 999999999);
+        setHarvestLevel("axe", 999999999);
     }
 }

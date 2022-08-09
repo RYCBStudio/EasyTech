@@ -1,6 +1,5 @@
 package com.rycb.etech;
 
-import com.rycb.etech.init.ModFluids;
 import com.rycb.etech.init.ModRecipes;
 import com.rycb.etech.proxy.CommonProxy;
 import com.rycb.etech.tabs.ETechTab;
@@ -714,7 +713,6 @@ public class EasyTech {
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
-        ModFluids.registerFluids();
         RegistryHandler.preInitRegistries();
     }
 
@@ -722,6 +720,7 @@ public class EasyTech {
     public void Init(FMLInitializationEvent event) {
         ModRecipes.init();
         proxy.Init(event);
+        RegistryHandler.initRegistries();
     }
 
     @Mod.EventHandler

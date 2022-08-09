@@ -17,13 +17,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TabRegistry {
+    private static final ArrayList<AbstractTab> tabList = new ArrayList<>();
+    private static final Minecraft mc = FMLClientHandler.instance().getClient();
     public static Class<?> clazzNEIConfig = null;
     public static int recipeBookOffset;
-    private static final ArrayList<AbstractTab> tabList = new ArrayList<AbstractTab>();
     private static Class<?> clazzJEIConfig = null;
-    private static final Minecraft mc = FMLClientHandler.instance().getClient();
     private static boolean initWithPotion;
-
+    
     static {
         try {
             //Checks for JEI by looking for this class instead of a Loader.isModLoaded() check

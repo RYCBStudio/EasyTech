@@ -11,7 +11,7 @@ import net.minecraftforge.fluids.Fluid;
 
 /**
  * @author RYCBStudio/Java Department
- * <p>Create Time: 2022/8/3 16:32</p>
+ * <p>Create Time: 2022/8/7 19:45</p>
  * <p>Use the IntelliJ IDEA</p>
  * <p>Location: EasyTech/com.rycb.etech.block.fluids/FluidBlock.java</p>
  * <h1><center>FluidBlock</center></h1>
@@ -21,10 +21,11 @@ public class FluidBlock extends BlockFluidClassic {
         super(fluid, material);
         setUnlocalizedName(name);
         setRegistryName(name);
+        
         ModBlocks.BLOCKS.add(this);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
     }
-
+    
     public EnumBlockRenderType getRenderType(IBlockState state) {
         return EnumBlockRenderType.MODEL;
     }

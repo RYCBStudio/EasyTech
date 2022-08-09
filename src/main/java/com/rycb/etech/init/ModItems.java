@@ -13,6 +13,8 @@ import com.rycb.etech.items.single.EnchantedGoldenCarrot;
 import com.rycb.etech.items.single.GlisteningMelon;
 import com.rycb.etech.items.single.cheating.MCG;
 import com.rycb.etech.items.single.cheating.MCP;
+import com.rycb.etech.items.single.cheating.Panacea;
+import com.rycb.etech.util.Calculator;
 import com.rycb.etech.util.Reference;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
@@ -26,7 +28,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ModItems {
-    public static final List<Item> ITEMS = new ArrayList<Item>();
+    public static final List<Item> ITEMS = new ArrayList<>();
 
 
     /**
@@ -93,7 +95,7 @@ public class ModItems {
     public static final Item ENCHANTED_GOLDEN_CARROT = new EnchantedGoldenCarrot();
     public static final Item GLISTENING_MELON = new GlisteningMelon();
     public static final Item ENCHANTED_GLISTENING_MELON = new EnchantedGlisteningMelon();
-
+    
     /**
      * Partially Prepared Products
      */
@@ -102,8 +104,9 @@ public class ModItems {
     protected static int damage = new Random().nextInt();
     protected static int harvestLevel = new Random().nextInt();
     protected static float efficiency = new Random().nextFloat();
+    public static final Item PANACEA = new Panacea();
     protected static int enchantability = new Random().nextInt();
-    public static final Item.ToolMaterial MATERIAL_ModderCheat = EnumHelper.addToolMaterial("material_mcg", Math.max(harvestLevel, 4), 1919810, Math.max(efficiency, 114.514f), Math.max(damage, 114514), Math.max(enchantability, 80));
+    public static final Item.ToolMaterial MATERIAL_ModderCheat = EnumHelper.addToolMaterial("material_mcg", Math.max(harvestLevel, 5), 1919810, Calculator.randomGenerate(efficiency, 999999999), Calculator.randomGenerate(damage, 999999999), Math.max(enchantability, 80));
     //In the game its name is "Modder Cheat Gun"
     public static final Item MCG = new MCG(MATERIAL_ModderCheat);
     public static final Item MCP = new MCP(MATERIAL_ModderCheat);

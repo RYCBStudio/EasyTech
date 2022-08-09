@@ -44,6 +44,8 @@ tile.oreFluorite.name=荧石矿石
 item.foodSulfurChocolate.name=硫巧克力
 item.foodchocolate.name=巧克力
 
+item.panacea.name=万能药
+
 item.foodfolkPsn1.name=偏方
 item.foodfolkPsn2.name=偏方
 item.foodfolkPsn3.name=偏方
@@ -60,3 +62,6 @@ entity.wither_king.name=凋零王
 
 fluid.oil=石油
 fluid.liquid_nitrogen=液氮
+
+enchantment.malicious=恶毒
+enchantment.etech.malicious.desc=这是多么恶毒的人啊！

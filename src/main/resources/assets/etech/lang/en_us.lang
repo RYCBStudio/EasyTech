@@ -41,6 +41,8 @@ tile.oreRadium.name=Radium Ore
 item.foodSulfurChocolate.name=Sulfur Chocolate
 item.foodchocolate.name=Chocolate
 
+item.panacea.name=Panacea
+
 item.foodfolkPsn1.name=Folk Prescription
 item.foodfolkPsn2.name=Folk Prescription
 item.foodfolkPsn3.name=Folk Prescription
@@ -57,3 +59,6 @@ entity.wither_king.name=Wither King
 
 fluid.oil=Oil
 fluid.liquid_nitrogen=Liquid nitrogen
+
+enchantment.malicious=Malicious
+enchantment.etech.malicious.desc=What a malicious person!
