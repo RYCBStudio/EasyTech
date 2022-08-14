@@ -1,0 +1,18 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "ore": "blockNetherStar",
+      "type": "forge:ore_dict"
+    }
+  },
+  "result": {
+    "item": "etech:ns_block_j",
+    "count": 1
+  }
+}

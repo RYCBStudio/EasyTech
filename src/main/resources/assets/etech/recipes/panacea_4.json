@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "pattern": [
     "NDN",
     "DFD",
@@ -7,13 +7,14 @@
   ],
   "key": {
     "N": {
-      "item": "minecraft:nether_star"
+      "item": "etech:ns_block_n"
     },
     "F": {
       "item": "etech:food_folk_psn_5"
     },
     "D": {
-      "item": "minecraft:diamond_block"
+      "ore": "blockDiamond",
+      "type": "forge:ore_dict"
     }
   },
   "result": {

@@ -1,6 +1,7 @@
 package com.rycb.etech.util.handlers;
 
 
+import com.rycb.etech.blocks.tileentity.TileEntityHandler;
 import com.rycb.etech.entity.EntityInit;
 import com.rycb.etech.init.ModBlocks;
 import com.rycb.etech.init.ModEnchantments;
@@ -12,8 +13,10 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
 
 @EventBusSubscriber
 public class RegistryHandler {
@@ -42,6 +45,7 @@ public class RegistryHandler {
     @SubscribeEvent
     public static void onBlockRegister(RegistryEvent.Register<Block> event) {
         event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+        TileEntityHandler.registerTileEntities();
     }
     
     @SubscribeEvent
@@ -57,6 +61,6 @@ public class RegistryHandler {
     }
     
     public static void initRegistries() {
-        //TODO
+    
     }
 }

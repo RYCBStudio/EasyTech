@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "burning=false,facing=north": {
+      "model": "etech:blast_furnace"
+    },
+    "burning=false,facing=east": {
+      "model": "etech:blast_furnace",
+      "y": 90
+    },
+    "burning=false,facing=south": {
+      "model": "etech:blast_furnace",
+      "y": 180
+    },
+    "burning=false,facing=west": {
+      "model": "etech:blast_furnace",
+      "y": 270
+    },
+    "burning=true,facing=north": {
+      "model": "etech:blast_furnace_li"
+    },
+    "burning=true,facing=east": {
+      "model": "etech:blast_furnace_li",
+      "y": 90
+    },
+    "burning=true,facing=south": {
+      "model": "etech:blast_furnace_li",
+      "y": 180
+    },
+    "burning=true,facing=west": {
+      "model": "etech:blast_furnace_li",
+      "y": 270
+    }
+  }
+}

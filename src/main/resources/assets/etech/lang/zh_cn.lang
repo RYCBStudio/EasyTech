@@ -39,6 +39,15 @@ tile.oreUranium.name=铀矿石
 tile.oreAluminium.name=铝矿石
 tile.oreRadium.name=镭矿石
 tile.oreFluorite.name=荧石矿石
+tile.ns_block.name=下界之星块
+tile.j_ns_block.name=下级下界之星快
+tile.e_ns_block.name=初级下界之星快
+tile.i_ns_block.name=中级下界之星快
+tile.s_ns_block.name=高级下界之星快
+tile.u_ns_block.name=终极下界之星快
+tile.n_ns_block.name=究极下界之星快
+
+tile.blast_furnace.name=高炉
 
 
 item.foodSulfurChocolate.name=硫巧克力
@@ -65,3 +74,5 @@ fluid.liquid_nitrogen=液氮
 
 enchantment.malicious=恶毒
 enchantment.etech.malicious.desc=这是多么恶毒的人啊！
+
+container.blast_furnace=高炉

@@ -7,14 +7,14 @@
   ],
   "key": {
     "I": {
-      "item": "etech:steel_ingot"
+      "ore": "ingotSteel",
+      "type": "forge:ore_dict"
     },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "etech:steel_pickaxe",
-    "count": 1
+    "item": "etech:steel_pickaxe"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "pattern": [
     "II ",
     "IS ",
@@ -7,14 +7,14 @@
   ],
   "key": {
     "I": {
-      "item": "etech:steel_ingot"
+      "ore": "ingotSteel",
+      "type": "forge:ore_dict"
     },
     "S": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "etech:steel_axe",
-    "count": 1
+    "item": "etech:steel_axe"
   }
 }

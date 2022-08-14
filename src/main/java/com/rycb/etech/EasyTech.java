@@ -1,12 +1,18 @@
 package com.rycb.etech;
 
+import com.rycb.etech.gui.ETJEITab;
+import com.rycb.etech.gui.ModGuiElementLoader;
 import com.rycb.etech.init.ModRecipes;
 import com.rycb.etech.proxy.CommonProxy;
 import com.rycb.etech.tabs.ETechTab;
 import com.rycb.etech.util.Reference;
+import com.rycb.etech.util.handlers.OreDictHandler;
 import com.rycb.etech.util.handlers.RegistryHandler;
 import com.rycb.etech.world.ModWorldGen;
+import micdoodle8.mods.galacticraft.api.client.tabs.InventoryTabVanilla;
+import micdoodle8.mods.galacticraft.api.client.tabs.TabRegistry;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -14,6 +20,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * @author RYCBStudio
@@ -698,33 +706,40 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.MC_VERSION)
 public class EasyTech {
-
+    private static final Logger LOGGER = LogManager.getLogger();
+    
     @Mod.Instance(Reference.MOD_ID)
     public static EasyTech instance;
     @SidedProxy(clientSide = Reference.PROXY_CLIENT, serverSide = Reference.PROXY_SERVER)
     public static CommonProxy proxy;
     public static CreativeTabs ETECH_TAB = new ETechTab();
-
+    
     static {
         FluidRegistry.enableUniversalBucket();
     }
-
+    
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
         RegistryHandler.preInitRegistries();
+        LOGGER.info("{} for Minecraft{} is pre-Initializing", Reference.NAME, Reference.MC_VERSION);
     }
-
+    
     @Mod.EventHandler
     public void Init(FMLInitializationEvent event) {
         ModRecipes.init();
+        OreDictHandler.init();
         proxy.Init(event);
         RegistryHandler.initRegistries();
+        new ModGuiElementLoader();
+        LOGGER.info("{} for Minecraft{} is Initializing", Reference.NAME, Reference.MC_VERSION);
+        
     }
-
+    
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
         proxy.postInit(event);
+        LOGGER.info("{} for Minecraft{} is post-Initializing", Reference.NAME, Reference.MC_VERSION);
     }
 }

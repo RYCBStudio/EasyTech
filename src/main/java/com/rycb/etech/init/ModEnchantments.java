@@ -1,6 +1,6 @@
 package com.rycb.etech.init;
 
-import com.rycb.etech.enchantment.EnchantmentMalicious;
+import com.rycb.etech.enchantments.EnchantmentMalicious;
 import com.rycb.etech.util.Reference;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;

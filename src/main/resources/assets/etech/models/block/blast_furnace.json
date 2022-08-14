@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "etech:blocks/blast_furnace_side",
+    "north": "etech:blocks/blast_furnace_front_off",
+    "south": "etech:blocks/blast_furnace_side",
+    "east": "etech:blocks/blast_furnace_side",
+    "west": "etech:blocks/blast_furnace_side",
+    "up": "etech:blocks/blast_furnace_top",
+    "down": "etech:blocks/blast_furnace_side"
+  }
+}

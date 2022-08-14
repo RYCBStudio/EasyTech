@@ -14,7 +14,7 @@ import com.rycb.etech.items.single.GlisteningMelon;
 import com.rycb.etech.items.single.cheating.MCG;
 import com.rycb.etech.items.single.cheating.MCP;
 import com.rycb.etech.items.single.cheating.Panacea;
-import com.rycb.etech.util.Calculator;
+import com.rycb.etech.util.SimpleCalculator;
 import com.rycb.etech.util.Reference;
 import net.minecraft.init.MobEffects;
 import net.minecraft.init.SoundEvents;
@@ -106,7 +106,7 @@ public class ModItems {
     protected static float efficiency = new Random().nextFloat();
     public static final Item PANACEA = new Panacea();
     protected static int enchantability = new Random().nextInt();
-    public static final Item.ToolMaterial MATERIAL_ModderCheat = EnumHelper.addToolMaterial("material_mcg", Math.max(harvestLevel, 5), 1919810, Calculator.randomGenerate(efficiency, 999999999), Calculator.randomGenerate(damage, 999999999), Math.max(enchantability, 80));
+    public static final Item.ToolMaterial MATERIAL_ModderCheat = EnumHelper.addToolMaterial("material_mcg", Math.max(harvestLevel, 5), 1919810, SimpleCalculator.rGenerate.randomGenerate(efficiency, 999999999), SimpleCalculator.rGenerate.randomGenerate(damage, 999999999), Math.max(enchantability, 80));
     //In the game its name is "Modder Cheat Gun"
     public static final Item MCG = new MCG(MATERIAL_ModderCheat);
     public static final Item MCP = new MCP(MATERIAL_ModderCheat);

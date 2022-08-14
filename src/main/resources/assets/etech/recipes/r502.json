@@ -1,26 +1,28 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "forge:ore_shaped",
   "pattern": [
     "NDN",
     "NAN",
-    "PNN"
+    "NPN"
   ],
   "key": {
     "N": {
-      "item": "minecraft:nether_star"
+      "item": "etech:ns_block_n"
     },
     "A": {
       "item": "etech:steel_pickaxe"
     },
     "P": {
-      "item": "etech:plastic"
+      "ore": "platePlastic",
+      "type": "forge:ore_dict"
     },
     "D": {
-      "item": "minecraft:diamond_block"
+      "ore": "blockDiamond",
+      "type": "forge:ore_dict"
     }
   },
   "result": {
-    "item": "etech:mcp",
+    "item": "etech:mcp_pickaxe",
     "count": 1
   }
 }

@@ -1,6 +1,6 @@
 package com.rycb.etech.init;
 
-import com.rycb.etech.EasyTech;
+
 import com.rycb.etech.fluids.FluidLiquid;
 import com.rycb.etech.util.Reference;
 import net.minecraft.util.ResourceLocation;

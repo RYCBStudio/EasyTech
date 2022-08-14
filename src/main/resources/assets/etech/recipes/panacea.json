@@ -7,13 +7,14 @@
   ],
   "key": {
     "N": {
-      "item": "minecraft:nether_star"
+      "item": "etech:ns_block_n"
     },
     "F": {
       "item": "etech:food_folk_psn_1"
     },
     "D": {
-      "item": "minecraft:diamond_block"
+      "ore": "blockDiamond",
+      "type": "forge:ore_dict"
     }
   },
   "result": {

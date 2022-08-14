@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "item": "etech:ns_block_u"
+    }
+  },
+  "result": {
+    "item": "etech:ns_block_n",
+    "count": 1
+  }
+}

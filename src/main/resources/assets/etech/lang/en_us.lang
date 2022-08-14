@@ -37,6 +37,15 @@ tile.oreUranium.name=Uranium Ore
 tile.oreFluorite.name=Fluorite Ore
 tile.oreAluminium.name=Aluminium Ore
 tile.oreRadium.name=Radium Ore
+tile.ns_block.name=Nether Star Block
+tile.j_ns_block.name=Junior Nether Star Block
+tile.e_ns_block.name=Elementary Nether Star Block
+tile.i_ns_block.name=Intermediate Nether Star Block
+tile.s_ns_block.name=Senior Nether Star Block
+tile.u_ns_block.name=Ultimate Nether Star Block
+tile.n_ns_block.name=Insanium Nether Star Block
+
+tile.blast_furnace.name=Blast Furnace
 
 item.foodSulfurChocolate.name=Sulfur Chocolate
 item.foodchocolate.name=Chocolate
@@ -62,3 +71,5 @@ fluid.liquid_nitrogen=Liquid nitrogen
 
 enchantment.malicious=Malicious
 enchantment.etech.malicious.desc=What a malicious person!
+
+container.blast_furnace=Blast Furnace
