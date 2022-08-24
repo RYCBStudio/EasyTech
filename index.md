@@ -1,12 +1,12 @@
 # EasyTech
 
-\[ [简体中文][zh_CN] | English \]
+[简体中文][zh_CN] | English 
 
 ## An industrial mod
 ### You can see the source code completely in [here][h].
 ### You can participate in discussions or submit bugs at [here][h1].
 
-\[ 简体中文 | [English][en_US] \]
+简体中文 | [English][en_US] 
 
 ## 一个工业模组
 ### 您可以在[这里][h]完整地看到源代码。
